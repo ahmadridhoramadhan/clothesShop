@@ -1,0 +1,882 @@
+[
+    {
+        "id": 1,
+        "price": 100000,
+        "name": "Product A",
+        "total_stock": 10,
+        "carousel_images": [
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            }
+        ],
+        "thumbnail": {
+            "alt": "product",
+            "name": "favicon.ico",
+            "base_url": "/"
+        },
+        "short_product_description": "This is a short description of Product A.",
+        "descriptions": [
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is a description of Product A."
+            },
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is another description of Product A."
+            }
+        ],
+        "products": [
+            {
+                "color": "red",
+                "available_sizes": [
+                    {
+                        "stock": 5,
+                        "size": "XL"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 2,
+                        "size": "M"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            },
+            {
+                "color": "blue",
+                "available_sizes": [
+                    {
+                        "stock": 4,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 1,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "price": 100000,
+        "name": "Product B",
+        "total_stock": 10,
+        "carousel_images": [
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            }
+        ],
+        "thumbnail": {
+            "alt": "product",
+            "name": "favicon.ico",
+            "base_url": "/"
+        },
+        "short_product_description": "This is a short description of Product A.",
+        "descriptions": [
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is a description of Product A."
+            },
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is another description of Product A."
+            }
+        ],
+        "products": [
+            {
+                "color": "red",
+                "available_sizes": [
+                    {
+                        "stock": 5,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 2,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            },
+            {
+                "color": "blue",
+                "available_sizes": [
+                    {
+                        "stock": 4,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 1,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "price": 100000,
+        "name": "Product C",
+        "total_stock": 10,
+        "carousel_images": [
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            }
+        ],
+        "thumbnail": {
+            "alt": "product",
+            "name": "favicon.ico",
+            "base_url": "/"
+        },
+        "short_product_description": "This is a short description of Product A.",
+        "descriptions": [
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is a description of Product A."
+            },
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is another description of Product A."
+            }
+        ],
+        "products": [
+            {
+                "color": "red",
+                "available_sizes": [
+                    {
+                        "stock": 5,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 2,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            },
+            {
+                "color": "blue",
+                "available_sizes": [
+                    {
+                        "stock": 4,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 1,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "price": 100000,
+        "name": "Product D",
+        "total_stock": 10,
+        "carousel_images": [
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            }
+        ],
+        "thumbnail": {
+            "alt": "product",
+            "name": "favicon.ico",
+            "base_url": "/"
+        },
+        "short_product_description": "This is a short description of Product A.",
+        "descriptions": [
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is a description of Product A."
+            },
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is another description of Product A."
+            }
+        ],
+        "products": [
+            {
+                "color": "red",
+                "available_sizes": [
+                    {
+                        "stock": 5,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 2,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            },
+            {
+                "color": "blue",
+                "available_sizes": [
+                    {
+                        "stock": 4,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 1,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "price": 100000,
+        "name": "Product E",
+        "total_stock": 10,
+        "carousel_images": [
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            }
+        ],
+        "thumbnail": {
+            "alt": "product",
+            "name": "favicon.ico",
+            "base_url": "/"
+        },
+        "short_product_description": "This is a short description of Product A.",
+        "descriptions": [
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is a description of Product A."
+            },
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is another description of Product A."
+            }
+        ],
+        "products": [
+            {
+                "color": "red",
+                "available_sizes": [
+                    {
+                        "stock": 5,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 2,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            },
+            {
+                "color": "blue",
+                "available_sizes": [
+                    {
+                        "stock": 4,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 1,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "price": 100000,
+        "name": "Product F",
+        "total_stock": 10,
+        "carousel_images": [
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            }
+        ],
+        "thumbnail": {
+            "alt": "product",
+            "name": "favicon.ico",
+            "base_url": "/"
+        },
+        "short_product_description": "This is a short description of Product A.",
+        "descriptions": [
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is a description of Product A."
+            },
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is another description of Product A."
+            }
+        ],
+        "products": [
+            {
+                "color": "red",
+                "available_sizes": [
+                    {
+                        "stock": 5,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 2,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            },
+            {
+                "color": "blue",
+                "available_sizes": [
+                    {
+                        "stock": 4,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 1,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "price": 100000,
+        "name": "Product G",
+        "total_stock": 10,
+        "carousel_images": [
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            }
+        ],
+        "thumbnail": {
+            "alt": "product",
+            "name": "favicon.ico",
+            "base_url": "/"
+        },
+        "short_product_description": "This is a short description of Product A.",
+        "descriptions": [
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is a description of Product A."
+            },
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is another description of Product A."
+            }
+        ],
+        "products": [
+            {
+                "color": "red",
+                "available_sizes": [
+                    {
+                        "stock": 5,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 2,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            },
+            {
+                "color": "blue",
+                "available_sizes": [
+                    {
+                        "stock": 4,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 1,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "price": 100000,
+        "name": "Product H",
+        "total_stock": 10,
+        "carousel_images": [
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            }
+        ],
+        "thumbnail": {
+            "alt": "product",
+            "name": "favicon.ico",
+            "base_url": "/"
+        },
+        "short_product_description": "This is a short description of Product A.",
+        "descriptions": [
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is a description of Product A."
+            },
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is another description of Product A."
+            }
+        ],
+        "products": [
+            {
+                "color": "red",
+                "available_sizes": [
+                    {
+                        "stock": 5,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 2,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            },
+            {
+                "color": "blue",
+                "available_sizes": [
+                    {
+                        "stock": 4,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 1,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "price": 100000,
+        "name": "Product I",
+        "total_stock": 10,
+        "carousel_images": [
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            }
+        ],
+        "thumbnail": {
+            "alt": "product",
+            "name": "favicon.ico",
+            "base_url": "/"
+        },
+        "short_product_description": "This is a short description of Product A.",
+        "descriptions": [
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is a description of Product A."
+            },
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is another description of Product A."
+            }
+        ],
+        "products": [
+            {
+                "color": "red",
+                "available_sizes": [
+                    {
+                        "stock": 5,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 2,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            },
+            {
+                "color": "blue",
+                "available_sizes": [
+                    {
+                        "stock": 4,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 1,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "price": 100000,
+        "name": "Product J",
+        "total_stock": 10,
+        "carousel_images": [
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            }
+        ],
+        "thumbnail": {
+            "alt": "product",
+            "name": "favicon.ico",
+            "base_url": "/"
+        },
+        "short_product_description": "This is a short description of Product A.",
+        "descriptions": [
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is a description of Product A."
+            },
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "teks": "This is another description of Product A."
+            }
+        ],
+        "products": [
+            {
+                "color": "red",
+                "available_sizes": [
+                    {
+                        "stock": 5,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 2,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            },
+            {
+                "color": "blue",
+                "available_sizes": [
+                    {
+                        "stock": 4,
+                        "size": "L"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 1,
+                        "size": "XL"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            }
+        ]
+    }
+]
