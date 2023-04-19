@@ -15,9 +15,9 @@ export default function Layout({ children, title }: LayoutInterface) {
             <Head>
                 <title>{title}</title>
             </Head>
-            <div className="">
+            <div className="flex flex-col min-h-screen">
                 <Header />
-                <main>
+                <main className="flex-auto">
                     {children}
                 </main>
                 <Footer />

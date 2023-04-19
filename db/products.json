@@ -29,7 +29,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is a description of Product A."
+                "text": "This is a description of Product A."
             },
             {
                 "img": {
@@ -37,7 +37,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is another description of Product A."
+                "text": "This is another description of Product A."
             }
         ],
         "products": [
@@ -117,7 +117,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is a description of Product A."
+                "text": "This is a description of Product A."
             },
             {
                 "img": {
@@ -125,7 +125,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is another description of Product A."
+                "text": "This is another description of Product A."
             }
         ],
         "products": [
@@ -205,7 +205,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is a description of Product A."
+                "text": "This is a description of Product A."
             },
             {
                 "img": {
@@ -213,7 +213,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is another description of Product A."
+                "text": "This is another description of Product A."
             }
         ],
         "products": [
@@ -293,7 +293,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is a description of Product A."
+                "text": "This is a description of Product A."
             },
             {
                 "img": {
@@ -301,7 +301,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is another description of Product A."
+                "text": "This is another description of Product A."
             }
         ],
         "products": [
@@ -381,7 +381,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is a description of Product A."
+                "text": "This is a description of Product A."
             },
             {
                 "img": {
@@ -389,7 +389,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is another description of Product A."
+                "text": "This is another description of Product A."
             }
         ],
         "products": [
@@ -469,7 +469,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is a description of Product A."
+                "text": "This is a description of Product A."
             },
             {
                 "img": {
@@ -477,7 +477,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is another description of Product A."
+                "text": "This is another description of Product A."
             }
         ],
         "products": [
@@ -557,7 +557,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is a description of Product A."
+                "text": "This is a description of Product A."
             },
             {
                 "img": {
@@ -565,7 +565,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is another description of Product A."
+                "text": "This is another description of Product A."
             }
         ],
         "products": [
@@ -645,7 +645,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is a description of Product A."
+                "text": "This is a description of Product A."
             },
             {
                 "img": {
@@ -653,7 +653,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is another description of Product A."
+                "text": "This is another description of Product A."
             }
         ],
         "products": [
@@ -733,7 +733,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is a description of Product A."
+                "text": "This is a description of Product A."
             },
             {
                 "img": {
@@ -741,7 +741,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is another description of Product A."
+                "text": "This is another description of Product A."
             }
         ],
         "products": [
@@ -821,7 +821,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is a description of Product A."
+                "text": "This is a description of Product A."
             },
             {
                 "img": {
@@ -829,7 +829,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "teks": "This is another description of Product A."
+                "text": "This is another description of Product A."
             }
         ],
         "products": [
