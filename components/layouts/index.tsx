@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { ReactNode } from "react";
+import { ReactNode, createContext, useState } from "react";
 import Header from "./Header";
 import Footer from "./footer";
 

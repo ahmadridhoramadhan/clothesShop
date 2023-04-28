@@ -1,7 +1,7 @@
 import Layout from "@/components/layouts";
 import ContactInput from "../components/contactPage/ContactInput";
 import ContactTextarea from "../components/contactPage/ContactTextarea";
-import { AddreasIcon } from "../components/icons/AddreasIcon";
+import { AddressIcon } from "../components/icons/AddressIcon";
 import { TelephoneIcon } from "../components/icons/TelephoneIcon";
 import { EmailIcon } from "../components/icons/EmailIcon";
 import FAQS from "../components/contactPage/FAQS";
@@ -11,7 +11,7 @@ export default function ContactUs() {
     return (
         <Layout title="Contact Us">
             <div className="container mx-auto">
-                <section>
+                <section className="my-40 md:my-60">
                     <div className="my-auto w-full">
                         <div className="my-7 xl:flex select-none">
                             <h1 className="text-center sm:text-left sm:mb-3 text-4xl sm:text-6xl font-bold md:text-7xl">FAQS</h1>
@@ -27,7 +27,7 @@ export default function ContactUs() {
                     </div>
                 </section>
 
-                <section className="flex min-h-screen">
+                <section className="flex min-h-screen my-20">
                     <div className="my-auto flex w-full flex-col-reverse p-2 xl:flex-row xl:items-center xl:justify-center">
                         <div className="xl:max-w-2xl xl:basis-3/5">
                             <form action="" className="flex flex-col gap-4 border px-3 py-5 shadow-lg">
@@ -37,7 +37,7 @@ export default function ContactUs() {
 
                                 <ContactTextarea name={"message"} placeholder={"Message"} />
 
-                                <button type="submit" className="button">Send</button>
+                                <button type="submit" className="bg-black text-white py-2 rounded-sm shadow-md hover:bg-white border-2 border-black hover:text-black transition-all box-border font-semibold">Send</button>
                             </form>
                         </div>
 
@@ -49,7 +49,7 @@ export default function ContactUs() {
 
                                 <ul className="my-5 mx-5 text-2xl font-semibold">
                                     <li>
-                                        <a href="" className="my-2 block whitespace-nowrap transition-colors hover:text-gray-500 sm:my-3 xl:my-5"><AddreasIcon /> My addreas</a>
+                                        <a href="" className="my-2 block whitespace-nowrap transition-colors hover:text-gray-500 sm:my-3 xl:my-5"><AddressIcon /> My addreas</a>
                                     </li>
                                     <li>
                                         <a href="" className="my-2 block whitespace-nowrap transition-colors hover:text-gray-500 sm:my-3 xl:my-5"><TelephoneIcon /> +62 974 - 83928 - 5962</a>

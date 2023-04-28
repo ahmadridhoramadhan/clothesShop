@@ -9,7 +9,7 @@ interface SelectColorInterface {
 export default function ProductSelectColor({ product, selectedValue }: SelectColorInterface): JSX.Element {
     const list_color = product.products.map((product, index) => {
         return (
-            <ProductInputColor thumbnail_src={product.thumbnail} value={product.color} selectedValue={selectedValue} key={index} />
+            <ProductInputColor thumbnail={product.thumbnail} value={product.color} selectedValue={selectedValue} key={index} />
         );
     });
     return (

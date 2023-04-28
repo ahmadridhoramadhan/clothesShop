@@ -8,7 +8,7 @@ import ProductInterface from "@/utils/interface/ProductInterface";
 
 export default function Shop({ dataAllProducts }: { dataAllProducts: Array<ProductInterface> }) {
     const all_product_list = dataAllProducts.map(product =>
-        <CardShop key={product.id} product_price={product.price} Product_name={product.name} thumbnail_src={product.thumbnail} id={product.id} />
+        <CardShop key={product.id} product_price={product.price} Product_name={product.name} thumbnail_src={product.thumbnail_global} id={product.id} />
     )
 
     return (

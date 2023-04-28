@@ -1,10 +1,16 @@
 [
     {
         "id": 1,
-        "price": 100000,
+        "price": 250000,
         "name": "Product A",
         "total_stock": 10,
+        "category": "shirt",
         "carousel_images": [
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
+            },
             {
                 "alt": "product",
                 "name": "favicon.ico",
@@ -16,12 +22,12 @@
                 "base_url": "/"
             }
         ],
-        "thumbnail": {
+        "thumbnail_global": {
             "alt": "product",
             "name": "favicon.ico",
             "base_url": "/"
         },
-        "short_product_description": "This is a short description of Product A.",
+        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
         "descriptions": [
             {
                 "img": {
@@ -29,7 +35,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is a description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             },
             {
                 "img": {
@@ -37,7 +43,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is another description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             }
         ],
         "products": [
@@ -89,9 +95,10 @@
     },
     {
         "id": 2,
-        "price": 100000,
+        "price": 3250000,
         "name": "Product B",
-        "total_stock": 10,
+        "total_stock": 54,
+        "category": "shoes",
         "carousel_images": [
             {
                 "alt": "product",
@@ -102,14 +109,19 @@
                 "alt": "product",
                 "name": "favicon.ico",
                 "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
             }
         ],
-        "thumbnail": {
+        "thumbnail_global": {
             "alt": "product",
             "name": "favicon.ico",
             "base_url": "/"
         },
-        "short_product_description": "This is a short description of Product A.",
+        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
         "descriptions": [
             {
                 "img": {
@@ -117,7 +129,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is a description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             },
             {
                 "img": {
@@ -125,7 +137,15 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is another description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
+            },
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             }
         ],
         "products": [
@@ -134,15 +154,19 @@
                 "available_sizes": [
                     {
                         "stock": 5,
-                        "size": "L"
+                        "size": 39
                     },
                     {
                         "stock": 3,
-                        "size": "M"
+                        "size": 40
                     },
                     {
                         "stock": 2,
-                        "size": "XL"
+                        "size": 40
+                    },
+                    {
+                        "stock": 19,
+                        "size": 41
                     }
                 ],
                 "thumbnail": {
@@ -156,15 +180,37 @@
                 "available_sizes": [
                     {
                         "stock": 4,
-                        "size": "L"
+                        "size": 39
                     },
                     {
                         "stock": 3,
-                        "size": "M"
+                        "size": 40
                     },
                     {
-                        "stock": 1,
-                        "size": "XL"
+                        "stock": 5,
+                        "size": 41
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            },
+            {
+                "color": "green",
+                "available_sizes": [
+                    {
+                        "stock": 4,
+                        "size": 39
+                    },
+                    {
+                        "stock": 3,
+                        "size": 40
+                    },
+                    {
+                        "stock": 5,
+                        "size": 41
                     }
                 ],
                 "thumbnail": {
@@ -177,9 +223,10 @@
     },
     {
         "id": 3,
-        "price": 100000,
+        "price": 1250000,
         "name": "Product C",
-        "total_stock": 10,
+        "total_stock": 54,
+        "category": "shoes",
         "carousel_images": [
             {
                 "alt": "product",
@@ -190,14 +237,19 @@
                 "alt": "product",
                 "name": "favicon.ico",
                 "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
             }
         ],
-        "thumbnail": {
+        "thumbnail_global": {
             "alt": "product",
             "name": "favicon.ico",
             "base_url": "/"
         },
-        "short_product_description": "This is a short description of Product A.",
+        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
         "descriptions": [
             {
                 "img": {
@@ -205,7 +257,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is a description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             },
             {
                 "img": {
@@ -213,7 +265,15 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is another description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
+            },
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             }
         ],
         "products": [
@@ -222,15 +282,19 @@
                 "available_sizes": [
                     {
                         "stock": 5,
-                        "size": "L"
+                        "size": 39
                     },
                     {
                         "stock": 3,
-                        "size": "M"
+                        "size": 40
                     },
                     {
                         "stock": 2,
-                        "size": "XL"
+                        "size": 40
+                    },
+                    {
+                        "stock": 19,
+                        "size": 41
                     }
                 ],
                 "thumbnail": {
@@ -244,15 +308,37 @@
                 "available_sizes": [
                     {
                         "stock": 4,
-                        "size": "L"
+                        "size": 39
                     },
                     {
                         "stock": 3,
-                        "size": "M"
+                        "size": 40
                     },
                     {
-                        "stock": 1,
-                        "size": "XL"
+                        "stock": 5,
+                        "size": 41
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            },
+            {
+                "color": "green",
+                "available_sizes": [
+                    {
+                        "stock": 4,
+                        "size": 39
+                    },
+                    {
+                        "stock": 3,
+                        "size": 40
+                    },
+                    {
+                        "stock": 5,
+                        "size": 41
                     }
                 ],
                 "thumbnail": {
@@ -265,9 +351,10 @@
     },
     {
         "id": 4,
-        "price": 100000,
+        "price": 1250000,
         "name": "Product D",
-        "total_stock": 10,
+        "total_stock": 54,
+        "category": "shoes",
         "carousel_images": [
             {
                 "alt": "product",
@@ -278,14 +365,19 @@
                 "alt": "product",
                 "name": "favicon.ico",
                 "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
             }
         ],
-        "thumbnail": {
+        "thumbnail_global": {
             "alt": "product",
             "name": "favicon.ico",
             "base_url": "/"
         },
-        "short_product_description": "This is a short description of Product A.",
+        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
         "descriptions": [
             {
                 "img": {
@@ -293,7 +385,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is a description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             },
             {
                 "img": {
@@ -301,7 +393,15 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is another description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
+            },
+            {
+                "img": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                },
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             }
         ],
         "products": [
@@ -310,15 +410,19 @@
                 "available_sizes": [
                     {
                         "stock": 5,
-                        "size": "L"
+                        "size": 39
                     },
                     {
                         "stock": 3,
-                        "size": "M"
+                        "size": 40
                     },
                     {
                         "stock": 2,
-                        "size": "XL"
+                        "size": 40
+                    },
+                    {
+                        "stock": 19,
+                        "size": 41
                     }
                 ],
                 "thumbnail": {
@@ -332,15 +436,37 @@
                 "available_sizes": [
                     {
                         "stock": 4,
-                        "size": "L"
+                        "size": 39
                     },
                     {
                         "stock": 3,
-                        "size": "M"
+                        "size": 40
                     },
                     {
-                        "stock": 1,
-                        "size": "XL"
+                        "stock": 5,
+                        "size": 41
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "favicon.ico",
+                    "base_url": "/"
+                }
+            },
+            {
+                "color": "green",
+                "available_sizes": [
+                    {
+                        "stock": 4,
+                        "size": 39
+                    },
+                    {
+                        "stock": 3,
+                        "size": 40
+                    },
+                    {
+                        "stock": 5,
+                        "size": 41
                     }
                 ],
                 "thumbnail": {
@@ -353,9 +479,10 @@
     },
     {
         "id": 5,
-        "price": 100000,
+        "price": 250000,
         "name": "Product E",
         "total_stock": 10,
+        "category": "shirt",
         "carousel_images": [
             {
                 "alt": "product",
@@ -366,14 +493,19 @@
                 "alt": "product",
                 "name": "favicon.ico",
                 "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
             }
         ],
-        "thumbnail": {
+        "thumbnail_global": {
             "alt": "product",
             "name": "favicon.ico",
             "base_url": "/"
         },
-        "short_product_description": "This is a short description of Product A.",
+        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
         "descriptions": [
             {
                 "img": {
@@ -381,7 +513,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is a description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             },
             {
                 "img": {
@@ -389,7 +521,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is another description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             }
         ],
         "products": [
@@ -398,15 +530,15 @@
                 "available_sizes": [
                     {
                         "stock": 5,
-                        "size": "L"
+                        "size": "XL"
                     },
                     {
                         "stock": 3,
-                        "size": "M"
+                        "size": "L"
                     },
                     {
                         "stock": 2,
-                        "size": "XL"
+                        "size": "M"
                     }
                 ],
                 "thumbnail": {
@@ -441,9 +573,10 @@
     },
     {
         "id": 6,
-        "price": 100000,
-        "name": "Product F",
+        "price": 250000,
+        "name": "Product E",
         "total_stock": 10,
+        "category": "shirt",
         "carousel_images": [
             {
                 "alt": "product",
@@ -454,14 +587,19 @@
                 "alt": "product",
                 "name": "favicon.ico",
                 "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
             }
         ],
-        "thumbnail": {
+        "thumbnail_global": {
             "alt": "product",
             "name": "favicon.ico",
             "base_url": "/"
         },
-        "short_product_description": "This is a short description of Product A.",
+        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
         "descriptions": [
             {
                 "img": {
@@ -469,7 +607,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is a description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             },
             {
                 "img": {
@@ -477,7 +615,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is another description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             }
         ],
         "products": [
@@ -486,15 +624,15 @@
                 "available_sizes": [
                     {
                         "stock": 5,
-                        "size": "L"
+                        "size": "XL"
                     },
                     {
                         "stock": 3,
-                        "size": "M"
+                        "size": "L"
                     },
                     {
                         "stock": 2,
-                        "size": "XL"
+                        "size": "M"
                     }
                 ],
                 "thumbnail": {
@@ -529,9 +667,10 @@
     },
     {
         "id": 7,
-        "price": 100000,
-        "name": "Product G",
+        "price": 250000,
+        "name": "Product E",
         "total_stock": 10,
+        "category": "shirt",
         "carousel_images": [
             {
                 "alt": "product",
@@ -542,14 +681,19 @@
                 "alt": "product",
                 "name": "favicon.ico",
                 "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
             }
         ],
-        "thumbnail": {
+        "thumbnail_global": {
             "alt": "product",
             "name": "favicon.ico",
             "base_url": "/"
         },
-        "short_product_description": "This is a short description of Product A.",
+        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
         "descriptions": [
             {
                 "img": {
@@ -557,7 +701,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is a description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             },
             {
                 "img": {
@@ -565,7 +709,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is another description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             }
         ],
         "products": [
@@ -574,15 +718,15 @@
                 "available_sizes": [
                     {
                         "stock": 5,
-                        "size": "L"
+                        "size": "XL"
                     },
                     {
                         "stock": 3,
-                        "size": "M"
+                        "size": "L"
                     },
                     {
                         "stock": 2,
-                        "size": "XL"
+                        "size": "M"
                     }
                 ],
                 "thumbnail": {
@@ -617,9 +761,10 @@
     },
     {
         "id": 8,
-        "price": 100000,
-        "name": "Product H",
+        "price": 250000,
+        "name": "Product E",
         "total_stock": 10,
+        "category": "shirt",
         "carousel_images": [
             {
                 "alt": "product",
@@ -630,14 +775,19 @@
                 "alt": "product",
                 "name": "favicon.ico",
                 "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
             }
         ],
-        "thumbnail": {
+        "thumbnail_global": {
             "alt": "product",
             "name": "favicon.ico",
             "base_url": "/"
         },
-        "short_product_description": "This is a short description of Product A.",
+        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
         "descriptions": [
             {
                 "img": {
@@ -645,7 +795,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is a description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             },
             {
                 "img": {
@@ -653,7 +803,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is another description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             }
         ],
         "products": [
@@ -662,15 +812,15 @@
                 "available_sizes": [
                     {
                         "stock": 5,
-                        "size": "L"
+                        "size": "XL"
                     },
                     {
                         "stock": 3,
-                        "size": "M"
+                        "size": "L"
                     },
                     {
                         "stock": 2,
-                        "size": "XL"
+                        "size": "M"
                     }
                 ],
                 "thumbnail": {
@@ -705,9 +855,10 @@
     },
     {
         "id": 9,
-        "price": 100000,
-        "name": "Product I",
+        "price": 250000,
+        "name": "Product E",
         "total_stock": 10,
+        "category": "shirt",
         "carousel_images": [
             {
                 "alt": "product",
@@ -718,14 +869,19 @@
                 "alt": "product",
                 "name": "favicon.ico",
                 "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
             }
         ],
-        "thumbnail": {
+        "thumbnail_global": {
             "alt": "product",
             "name": "favicon.ico",
             "base_url": "/"
         },
-        "short_product_description": "This is a short description of Product A.",
+        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
         "descriptions": [
             {
                 "img": {
@@ -733,7 +889,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is a description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             },
             {
                 "img": {
@@ -741,7 +897,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is another description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             }
         ],
         "products": [
@@ -750,15 +906,15 @@
                 "available_sizes": [
                     {
                         "stock": 5,
-                        "size": "L"
+                        "size": "XL"
                     },
                     {
                         "stock": 3,
-                        "size": "M"
+                        "size": "L"
                     },
                     {
                         "stock": 2,
-                        "size": "XL"
+                        "size": "M"
                     }
                 ],
                 "thumbnail": {
@@ -793,9 +949,10 @@
     },
     {
         "id": 10,
-        "price": 100000,
-        "name": "Product J",
+        "price": 250000,
+        "name": "Product E",
         "total_stock": 10,
+        "category": "shirt",
         "carousel_images": [
             {
                 "alt": "product",
@@ -806,14 +963,19 @@
                 "alt": "product",
                 "name": "favicon.ico",
                 "base_url": "/"
+            },
+            {
+                "alt": "product",
+                "name": "favicon.ico",
+                "base_url": "/"
             }
         ],
-        "thumbnail": {
+        "thumbnail_global": {
             "alt": "product",
             "name": "favicon.ico",
             "base_url": "/"
         },
-        "short_product_description": "This is a short description of Product A.",
+        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
         "descriptions": [
             {
                 "img": {
@@ -821,7 +983,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is a description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             },
             {
                 "img": {
@@ -829,7 +991,7 @@
                     "name": "favicon.ico",
                     "base_url": "/"
                 },
-                "text": "This is another description of Product A."
+                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
             }
         ],
         "products": [
@@ -838,15 +1000,15 @@
                 "available_sizes": [
                     {
                         "stock": 5,
-                        "size": "L"
+                        "size": "XL"
                     },
                     {
                         "stock": 3,
-                        "size": "M"
+                        "size": "L"
                     },
                     {
                         "stock": 2,
-                        "size": "XL"
+                        "size": "M"
                     }
                 ],
                 "thumbnail": {

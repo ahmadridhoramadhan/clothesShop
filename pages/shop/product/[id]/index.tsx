@@ -3,20 +3,28 @@ import ProductSelectColor from "@/components/detailProductPage/ProductSelectColo
 import ProductSelectSize from "@/components/detailProductPage/ProductSelectSize";
 import Layout from "@/components/layouts";
 import ProductInterface from "@/utils/interface/ProductInterface";
-import { imageType } from "@/utils/type/imageType";
-import Image from "next/image";
 import { useRouter } from "next/router";
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, createContext, useState } from "react";
 import { Cookies } from "react-cookie";
+import CarouselImageProduct from "../../../../components/detailProductPage/CarouselImageProduct";
+import { ProductDescription } from "../../../../components/detailProductPage/ProductDescription";
+import { refreshCartListContext } from "@/components/cart/Cart";
+
+// export const refreshCartListContext = createContext<{
+//     refreshCartState: boolean;
+//     setRefreshCartState: React.Dispatch<React.SetStateAction<boolean>>;
+// }>({ refreshCartState: false, setRefreshCartState: () => { } })
 
 
 interface AddToCartInterface {
     color: string
-    size: string
-    name: string
-    thumbnail: imageType
+    size: string | number
+    id: number
+    thumbnail: string
     price: number
     stock: number
+    name: string
+    category: string
 }
 
 export default function DetailProduct({ product }: { product: ProductInterface }) {
@@ -25,56 +33,51 @@ export default function DetailProduct({ product }: { product: ProductInterface }
     const { id } = Router.query
     const [selectedValue, setSelectedValue] = useState("")
 
+
+    const [refreshCartState, setRefreshCartState] = useState(false)
+
+
     const addToCart = (formData: AddToCartInterface) => {
         const cartItems = cookies.get('cartItems') || []
         const option = { maxAge: 20 * 24 * 60 * 60, path: '/' } // 20 days
-        const newItem = {
-            id: id,
+        const data = {
+            id: formData.id,
             color: formData.color,
             size: formData.size,
-            quantity: 1,
-            name: formData.name,
             price: formData.price,
-            stock: formData.stock,
+            name: formData.name,
             thumbnail: formData.thumbnail,
+            stock: formData.stock,
+            category: formData.category,
+            quantity: 1,
         }
 
-        const isDuplicate = cartItems.some((cartItem: string) => {
+        const indexDuplicate = cartItems.findIndex((cartItem: string) => {
             const parsedItem = JSON.parse(cartItem)
-            return (
-                parsedItem.color === newItem.color &&
-                parsedItem.size === newItem.size &&
-                parsedItem.name === newItem.name &&
-                parsedItem.price === newItem.price &&
-                parsedItem.stock === newItem.stock
-            )
+            // Mengecek apakah ada objek dengan properti yang sama, namun tidak termasuk `quantity`
+            return parsedItem.color === data.color &&
+                parsedItem.size === data.size &&
+                parsedItem.id === data.id
         })
 
-        if (isDuplicate) {
-            // If a duplicate object is found, update its quantity
-            const updatedCartItems = cartItems.map((cartItem: string) => {
-                const parsedItem = JSON.parse(cartItem)
-                if (
-                    parsedItem.color === newItem.color &&
-                    parsedItem.size === newItem.size &&
-                    parsedItem.name === newItem.name &&
-                    parsedItem.price === newItem.price &&
-                    parsedItem.stock === newItem.stock
-                ) {
-                    return JSON.stringify({
-                        ...parsedItem,
-                        quantity: parsedItem.quantity + 1
-                    })
-                }
-                return cartItem
-            })
-            cookies.set('cartItems', updatedCartItems, option)
+        if (indexDuplicate !== -1) {
+            // Jika ditemukan objek yang sama, maka update quantity-nya
+            const duplicateObj = JSON.parse(cartItems[indexDuplicate])
+            if (duplicateObj.quantity < data.stock) {
+                duplicateObj.quantity += 1
+                cartItems.splice(indexDuplicate, 1)
+                cartItems.push(JSON.stringify(duplicateObj))
+            } else {
+                alert('out of stock!')
+            }
         } else {
-            const updatedCartItems = [...cartItems, JSON.stringify(newItem)]
-            cookies.set('cartItems', updatedCartItems, option)
+            // jika tidak maka akan dimasukkan data dari data dari form
+            cartItems.push(JSON.stringify(data))
         }
-    }
+        cookies.set('cartItems', cartItems, option)
 
+        setRefreshCartState(!refreshCartState)
+    }
 
     const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -83,104 +86,86 @@ export default function DetailProduct({ product }: { product: ProductInterface }
 
         const color = data.get('color') as string;
         const size = data.get('size') as string;
-        const name = data.get('name') as string;
-        const price = parseInt(data.get('price') as string);
-        const thumbnail = JSON.parse(data.get('thumbnail') as string) as imageType;
+        const name = data.get('name') as string
+        const category = data.get('category') as string
+        const stock = data.get('stock')
+        const price = data.get('price')
+        const thumbnail = data.get('thumbnail') as string
 
         if (!color || !size) {
             alert('Please select color and size!');
             return;
         }
 
-        const { stock, size: selectedSize } = JSON.parse(size) as { stock: number; size: string };
+        const { size: selectedSize } = JSON.parse(size) as { size: string | number };
         const willSendData = {
-            color,
+            color: color,
             size: selectedSize,
-            name,
-            price,
-            stock,
-            thumbnail,
+            id: parseInt(Array.isArray(id) ? id[0] : id ?? '', 10),
+            price: price !== null ? parseInt(price as string, 10) : 0,
+            stock: stock !== null ? parseInt(stock as string, 10) : 0,
+            thumbnail: thumbnail,
+            category: category,
+            name: name,
         };
-
-        console.log(willSendData)
-        // addToCart(willSendData);
+        addToCart(willSendData);
     };
-
 
     const handleSelectedFormValue = (event: ChangeEvent<HTMLInputElement>) => { setSelectedValue(event.target.value) }
 
+
     return (
-        <Layout title="DetailProduct">
-            <div className="h-full">
-                {/* Bagian preview product */}
-                <section className="mx-auto max-w-7xl flex flex-col sm:flex-row">
-                    <ProductNameAndPrice mobile={true} name={product.name} price={product.price} />
-                    <div className="basis-2/4 border relative h-60">
-                        <Image src="" alt="" fill />
-                    </div>
-                    <div className="flex flex-auto flex-col px-2">
-                        <ProductNameAndPrice name={product.name} price={product.price} />
-
-                        <section className="p-2">
-                            {/* Ukuran dan jenis */}
-                            <form onSubmit={handleFormSubmit} className="mt-5" id="addToCart">
-                                <HiddenInput
-                                    price={product.price}
-                                    product_name={product.name}
-                                    thumbnail_src={product.thumbnail}
-                                />
-
-                                <div className="mt-5">
-                                    {/* Jenis */}
-                                    <ProductSelectColor
-                                        product={product}
-                                        selectedValue={handleSelectedFormValue}
-                                    />
-
-                                    {/* Category */}
-                                    <ProductSelectSize
-                                        selected_color_value={selectedValue}
-                                        product={product}
-                                    />
-                                </div>
-                            </form>
-                        </section>
-
-                        {/* Button */}
-                        <div className="flex">
-                            <button
-                                form="addToCart"
-                                type="submit"
-                                className="flex-auto bg-black py-3 text-white rounded-sm"
-                            >
-                                Add to Cart
-                            </button>
+        <refreshCartListContext.Provider value={{ refreshCartState: refreshCartState, setRefreshCartState: setRefreshCartState }}>
+            <Layout title="DetailProduct">
+                <div className="h-full">
+                    <section className="mx-auto max-w-[115rem] flex flex-col sm:flex-row">
+                        <div>
+                            <ProductNameAndPrice mobile={true} name={product.name} price={product.price} />
                         </div>
-                    </div>
-                </section>
 
-                {/* Deskripsi */}
-                <section className="container mx-auto">
-                    <div>Deskripsi yang isinya cuma teks dan penjelasan singkat</div>
-                    <div>Sedikit gambar dan yang lain</div>
-                    <div>Sedikit gambar dan yang lain</div>
-                </section>
+                        <div className="basis-3/4 md:p-5 p-2">
+                            <CarouselImageProduct product={product} />
+                        </div>
 
-                {/* Product yang terkait atau di sarankan */}
-                <section></section>
-            </div>
+                        <div className="flex flex-auto flex-col px-2 justify-evenly pb-40">
+                            <div>
+                                <ProductNameAndPrice name={product.name} price={product.price} />
+                            </div>
 
-        </Layout >
-    )
-}
+                            <section className="p-2">
+                                <form onSubmit={handleFormSubmit} className="mt-5" id="addToCart">
 
-function HiddenInput({ price, product_name, thumbnail_src }: { price: number, product_name: string, thumbnail_src: imageType }): JSX.Element {
-    return (
-        <div>
-            <input type="hidden" name="thumbnail" value={JSON.stringify(thumbnail_src)} />
-            <input type="hidden" name="price" value={price} />
-            <input type="hidden" name="name" value={product_name} />
-        </div>
+                                    <input type="hidden" name="price" value={product.price} />
+                                    <input type="hidden" name="name" value={product.name} />
+                                    <input type="hidden" name="category" value={product.category} />
+
+                                    <div className="mt-5">
+                                        <ProductSelectColor product={product} selectedValue={handleSelectedFormValue} />
+
+                                        <ProductSelectSize selected_color_value={selectedValue} product={product} />
+                                    </div>
+                                </form>
+                            </section>
+
+                            <div className="flex">
+                                <button form="addToCart" type="submit" className="flex-auto bg-black py-3 text-white rounded-sm">Add to Cart</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Deskripsi */}
+                    <section className="container mx-auto">
+
+                        <ProductDescription product={product} />
+
+                    </section>
+
+                    {/* Product yang terkait atau di sarankan */}
+                    <section></section>
+                </div>
+
+            </Layout >
+        </refreshCartListContext.Provider>
     )
 }
 

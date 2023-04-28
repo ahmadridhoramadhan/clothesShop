@@ -2,7 +2,7 @@ import Layout from "@/components/layouts";
 import AOS from "aos";
 import Link from "next/link";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import Image from "next/image";
 import dummyImage from "../public/favicon.ico"
 
