@@ -9,7 +9,7 @@ export default function CardShop(props: CardShopInterface): JSX.Element {
         <Link href={`shop/product/${id}`}>
             <div className="">
                 <div className="h-44 w-32 relative xs:w-40 xs:h-52 md:w-60 md:h-80 lg:w-80 lg:h-96">
-                    <Image src={thumbnail_src.base_url + thumbnail_src.name} alt={thumbnail_src.alt} fill />
+                    <Image src={`${thumbnail_src.base_url}${thumbnail_src.name}`} alt={thumbnail_src.alt} fill />
                 </div>
 
                 <div className="">
