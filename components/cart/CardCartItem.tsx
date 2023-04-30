@@ -27,18 +27,7 @@ export function CardCartItem({ cartItem }: { cartItem: cardCartItemInterface }):
     useEffect(() => {
         setSubTotal(cartItem.price * quantity);
         setRefreshCartState(prevRefreshCartState => !prevRefreshCartState);
-        const checkoutItem = {
-            quantity: quantity,
-            size: cartItem.size,
-            name: cartItem.name,
-            totalPrice: subTotal,
-            thumbnail: JSON.parse(cartItem.thumbnail),
-            color: cartItem.color
-        }
-        console.log('test')
-        setCheckoutItem(checkoutItem)
-    }, [quantity, cartItem, setRefreshCartState, subTotal])
-
+    }, [quantity, cartItem.price, setRefreshCartState,])
     useEffect(() => {
         const cartItems = cookies.get('cartItems') || [];
         const option = { maxAge: 20 * 24 * 60 * 60, path: '/' }; // 20 days
@@ -59,6 +48,17 @@ export function CardCartItem({ cartItem }: { cartItem: cardCartItemInterface }):
             }
         }
     }, [quantity, cookies, cartItem, setRefreshCartState])
+    useEffect(() => {
+        const checkoutItem = {
+            quantity: quantity,
+            size: cartItem.size,
+            name: cartItem.name,
+            totalPrice: subTotal,
+            thumbnail: JSON.parse(cartItem.thumbnail),
+            color: cartItem.color
+        }
+        setCheckoutItem(checkoutItem)
+    }, [quantity, cartItem, subTotal])
 
 
 

@@ -2,6 +2,7 @@ import { AddressIcon } from "@/components/icons/AddressIcon"
 import { BurgerMenuIcon } from "@/components/icons/BurgerMenuIcon"
 import { CartIcon } from "@/components/icons/CartIcon"
 import { EmailIcon } from "@/components/icons/EmailIcon"
+import { MinusIcon } from "@/components/icons/MinusIcon"
 import { PlusIcon } from "@/components/icons/PlusIcon"
 import { SearchIcon } from "@/components/icons/SearchIcon"
 import { TelephoneIcon } from "@/components/icons/TelephoneIcon"
@@ -72,6 +73,7 @@ export default function source() {
                                 <SourceIcon ><AddressIcon /></SourceIcon>
                                 <SourceIcon ><TelephoneIcon /></SourceIcon>
                                 <SourceIcon ><BurgerMenuIcon /></SourceIcon>
+                                <SourceIcon ><MinusIcon /></SourceIcon>
                             </div>
                         </div>
 
