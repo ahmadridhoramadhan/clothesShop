@@ -1,10 +1,22 @@
-import Layout from "@/components/layouts";
+import { useRouter } from "next/router"
+import { useEffect } from "react"
 
 
-export default function Test() {
+function Test() {
+    const router = useRouter()
+    useEffect(() => {
+        let data = sessionStorage.getItem('checkoutItems') as string
+        data = JSON.parse(data)
+        console.log(data)
+        sessionStorage.removeItem('checkoutItems')
+        console.log('test')
+    }, [router])
+
     return (
-        <Layout title="test">
-            <h1>test</h1>
-        </Layout>
+        <div>
+            <h1>Checkout Page</h1>
+        </div>
     )
 }
+
+export default Test

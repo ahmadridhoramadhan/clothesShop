@@ -9,7 +9,7 @@ import { CartIcon } from "../../icons/CartIcon"
 import { SearchIcon } from "../../icons/SearchIcon"
 import { XIcon } from "../../icons/XIcon"
 
-import { Cart } from "../../cart/Cart";
+import { Cart } from "../../cart";
 
 export default function Header() {
     const router = useRouter()
@@ -50,7 +50,7 @@ export default function Header() {
                     <div className="flex gap-3 items-center justify-self-end">
                         <form action="" method="get" className="select-none">
                             <div className="relative select-none z-50">
-                                <input type="search" name="search" id="search" placeholder="Search Something" className={"bg-white/10 pl-9 pt-2 pb-[6px] pr-2 outline-none border-b-2 border-black transition-all box-border duration-300 " + (isInputOpen ? "w-96" : "w-0 pl-0 pr-0")} />
+                                <input type="search" name="search" id="search" placeholder="Search Something" className={"bg-white/10 pl-9 pt-2 pb-[6px] pr-2 outline-none border-b-2 border-black transition-all box-border duration-300 " + (isInputOpen ? "w-56 xl:w-96" : "w-0 pl-0 pr-0")} />
                                 <label htmlFor="search" className={"absolute top-2 " + (isInputOpen ? "left-2" : "right-3")} onClick={show_input}>
                                     <SearchIcon additional_class="" />
                                 </label>
@@ -64,7 +64,7 @@ export default function Header() {
                 </section>
 
                 <section className="sticky top-0  md:hidden" id="mobile">
-                    <div className={"flex relative top-0 z-20 left-0 right-0 justify-between py-2 border-black px-3 items-center bg-white transition-all duration-100 " + (isBurgerMenuOpen ? "" : "border-b-2")}>
+                    <div className={"flex relative top-0 z-20 left-0 right-0 justify-between py-2 px-3 items-center bg-white transition-all duration-100 " + (isBurgerMenuOpen ? "" : "")}>
                         <div><button type="button" onClick={show_burger_menu}>{isBurgerMenuOpen ? <XIcon /> : <BurgerMenuIcon />}</button></div>
                         <div>LOGO</div>
                         <div><button type="button" className="" onClick={show_cart}><CartIcon /></button></div>

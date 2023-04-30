@@ -8,7 +8,7 @@ import React, { ChangeEvent, createContext, useState } from "react";
 import { Cookies } from "react-cookie";
 import CarouselImageProduct from "../../../../components/detailProductPage/CarouselImageProduct";
 import { ProductDescription } from "../../../../components/detailProductPage/ProductDescription";
-import { refreshCartListContext } from "@/components/cart/Cart";
+import { refreshCartListContext } from "@/components/cart";
 
 // export const refreshCartListContext = createContext<{
 //     refreshCartState: boolean;

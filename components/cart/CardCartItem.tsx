@@ -1,44 +1,43 @@
-import { useState, useMemo, useEffect, useContext } from "react";
-import { Cookies } from "react-cookie";
 import { PlusIcon } from "@/components/icons/PlusIcon";
-import Image from "next/image";
-import { MinusIcon } from "../icons/MinusIcon";
 import { imageType } from "@/utils/type/imageType";
+import Image from "next/image";
+import { useContext, useEffect, useMemo, useState } from "react";
+import { Cookies } from "react-cookie";
+import { MinusIcon } from "../icons/MinusIcon";
 import { cardCartItemInterface } from "./cardCartItemInterface";
 
-import { refreshCartListContext } from "./Cart";
+import Link from "next/link";
+import { refreshCartListContext } from ".";
 
-export function CardCartItem({ cartItem, incrementTotalCartList, decrementTotalCartList }: { cartItem: cardCartItemInterface, decrementTotalCartList: (productPrice: number) => void, incrementTotalCartList: (productPrice: number) => void }): JSX.Element {
+export function CardCartItem({ cartItem }: { cartItem: cardCartItemInterface }): JSX.Element {
     const cookies = useMemo(() => new Cookies(), []);
     const thumbnail = JSON.parse(cartItem.thumbnail) as imageType
 
     // TODO:make this cart always update so if the product runs out it will be disabled or if the stock is changed so that you cannot order past the stock limit
     const [quantity, setQuantity] = useState(cartItem.quantity);
     const [subTotal, setSubTotal] = useState(cartItem.price * cartItem.quantity);
-
-    // ini akan merubah isi dari quantity dan subTotal ketika component di panggil
     useEffect(() => {
         setQuantity(cartItem.quantity)
         setSubTotal(cartItem.price * cartItem.quantity)
     }, [cartItem.quantity, cartItem.price])
 
-    const increment_quantity = () => {
-        if (quantity < cartItem.stock) {
-            setQuantity(quantity + 1);
-        }
-    };
-    const decrement_quantity = () => {
-        if (quantity > 1) {
-            setQuantity(quantity - 1);
-        }
-    };
 
-
+    const [checkoutItem, setCheckoutItem] = useState({})
     const { refreshCartState, setRefreshCartState } = useContext(refreshCartListContext)
     useEffect(() => {
         setSubTotal(cartItem.price * quantity);
         setRefreshCartState(prevRefreshCartState => !prevRefreshCartState);
-    }, [quantity, cartItem.price, setRefreshCartState])
+        const checkoutItem = {
+            quantity: quantity,
+            size: cartItem.size,
+            name: cartItem.name,
+            totalPrice: subTotal,
+            thumbnail: JSON.parse(cartItem.thumbnail),
+            color: cartItem.color
+        }
+        console.log('test')
+        setCheckoutItem(checkoutItem)
+    }, [quantity, cartItem, setRefreshCartState, subTotal])
 
     useEffect(() => {
         const cartItems = cookies.get('cartItems') || [];
@@ -62,6 +61,7 @@ export function CardCartItem({ cartItem, incrementTotalCartList, decrementTotalC
     }, [quantity, cookies, cartItem, setRefreshCartState])
 
 
+
     function remove_this_cart() {
         const cartItems = cookies.get('cartItems') || [];
         const option = { maxAge: 20 * 24 * 60 * 60, path: '/' }; // 20 days
@@ -80,12 +80,23 @@ export function CardCartItem({ cartItem, incrementTotalCartList, decrementTotalC
             setRefreshCartState(!refreshCartState)
         }
     }
-
+    const increment_quantity = () => {
+        if (quantity < cartItem.stock) {
+            setQuantity(quantity + 1);
+        }
+    };
+    const decrement_quantity = () => {
+        if (quantity > 1) {
+            setQuantity(quantity - 1);
+        }
+    };
 
     return (
         <div className="w-full flex border-b gap-3 p-1 box-border items-center mt-4 pl-3">
-            <input type="hidden" name="checkoutItems[]" value="" />
-            <div className="overflow-hidden h-20 w-20 relative"><Image src={thumbnail.base_url + thumbnail.name} alt={thumbnail.alt} fill priority={false} /></div>
+            <input type="hidden" name="checkoutItems[]" value={JSON.stringify(checkoutItem)} />
+            <Link href={`shop/product/${cartItem.id}`}>
+                <div className="overflow-hidden h-20 w-20 relative"><Image src={thumbnail.base_url + thumbnail.name} alt={thumbnail.alt} fill priority={false} /></div>
+            </Link>
             <div className="overflow-hidden flex-auto">
                 <p className="text-xl truncate">{cartItem.name}</p>
                 <p className="text-sm text-gray-500 truncate">Color : {cartItem.color} / Size : {cartItem.size}</p>

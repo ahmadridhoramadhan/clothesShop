@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
+import dummyImage from "@/public/favicon.ico"
 
 export default function SectionPromo(): JSX.Element {
     const firstSlide = useRef<HTMLDivElement>(null!);
@@ -63,10 +64,10 @@ export default function SectionPromo(): JSX.Element {
     return (
         <section id="promo" className="relative aspect-[5/4] sm:aspect-[6/3] md:mb-20 mb-10">
 
-            <div id="slide" className="overflow-auto rounded-xl bg-slate-100 w-full h-full snap-x snap-mandatory scrollbar-hide" ref={containerRef}>
-                <div className="w-full bg-slate-200 h-full flex flex-nowrap">
-                    <div className="w-full h-full flex-shrink-0 lg:flex-shrink bg-slate-300 snap-start" id="item-1" ref={firstSlide}><Image src="" alt="" /></div>
-                    <div className="w-full h-full flex-shrink-0 lg:flex-shrink bg-slate-500 snap-end" id="item-2" ref={secondSlide}><Image src="" alt="" /></div>
+            <div id="slide" className="overflow-auto rounded-xl w-full h-full snap-x snap-mandatory scrollbar-hide" ref={containerRef}>
+                <div className="w-full h-full flex flex-nowrap">
+                    <div className="w-full h-full flex-shrink-0 lg:flex-shrink snap-start relative" id="item-1" ref={firstSlide}><Image src={dummyImage} alt="" fill /></div>
+                    <div className="w-full h-full flex-shrink-0 lg:flex-shrink snap-end relative" id="item-2" ref={secondSlide}><Image src={dummyImage} alt="" fill /></div>
                 </div>
             </div>
 

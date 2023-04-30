@@ -2,6 +2,7 @@ import React, { Suspense, createContext, useCallback, useContext, useEffect, use
 import { Cookies } from "react-cookie";
 import { XIcon } from "../icons/XIcon";
 import { CardCartItem } from "./CardCartItem";
+import { useRouter } from "next/router";
 
 
 export const refreshCartListContext = createContext<{
@@ -12,6 +13,7 @@ export const refreshCartListContext = createContext<{
 
 export function Cart({ isCartOpen, show_cart }: { isCartOpen: boolean; show_cart: () => void; }): JSX.Element {
     const cookies = useMemo(() => new Cookies(), []);
+    const router = useRouter()
 
     const [cartItems, setCartItems] = useState([]);
     const [showCartItemsList, setShowCartItemsList] = useState<React.ReactNode>();
@@ -21,7 +23,6 @@ export function Cart({ isCartOpen, show_cart }: { isCartOpen: boolean; show_cart
 
     const [totalCartList, setTotalCartList] = useState(0);
     const incrementTotalCartList = useCallback((productPrice: number) => { setTotalCartList(prevTotal => prevTotal + productPrice); }, [setTotalCartList]);
-    const decrementTotalCartList = useCallback((productPrice: number) => { setTotalCartList(prevTotal => prevTotal - productPrice); }, [setTotalCartList]);
 
     useEffect(() => {
         setCartItems(cookies.get('cartItems') || []);
@@ -33,12 +34,24 @@ export function Cart({ isCartOpen, show_cart }: { isCartOpen: boolean; show_cart
             incrementTotalCartList(JSON_cartItem.price * JSON_cartItem.quantity);
             return (
                 <div key={index}>
-                    <CardCartItem cartItem={JSON_cartItem} incrementTotalCartList={incrementTotalCartList} decrementTotalCartList={decrementTotalCartList} />
+                    <CardCartItem cartItem={JSON_cartItem} />
                 </div>
             );
         });
         setShowCartItemsList(show_cart_items_list);
-    }, [cartItems, incrementTotalCartList, decrementTotalCartList]);
+    }, [cartItems, incrementTotalCartList]);
+
+
+
+    function handleFormCheckout(event: React.FormEvent<HTMLFormElement>) {
+        event.preventDefault()
+        const form = event.target as HTMLFormElement
+        const formData = new FormData(form)
+        const data = formData.getAll('checkoutItems[]')
+
+        sessionStorage.setItem('checkoutItems', JSON.stringify(data))
+        router.push('/checkout')
+    }
 
     return (
         <div className={"fixed h-full right-0 z-50 flex transition-all duration-300 " + (isCartOpen ? 'w-full' : 'w-0')} id="cart">
@@ -52,7 +65,9 @@ export function Cart({ isCartOpen, show_cart }: { isCartOpen: boolean; show_cart
                 <div className="flex-auto overflow-auto scrollbar-hide">
                     <Suspense fallback={<h2> Loading...</h2>}>
                         <refreshCartListContext.Provider value={{ refreshCartState: refreshCartListFromRemoveCart, setRefreshCartState: setRefreshCartListFromRemoveCart }}>
-                            {showCartItemsList}
+                            <form onSubmit={handleFormCheckout} id="checkout">
+                                {showCartItemsList}
+                            </form>
                         </refreshCartListContext.Provider>
                     </Suspense>
                 </div>
@@ -67,7 +82,7 @@ export function Cart({ isCartOpen, show_cart }: { isCartOpen: boolean; show_cart
                             </tr>
                         </tbody>
                     </table>
-                    <button type="submit" className="w-full bg-black py-4 text-white sm:text-xl">Checkout Now</button>
+                    <button type="submit" form="checkout" className={`w-full bg-black py-4 text-white sm:text-xl ${router.pathname == '/checkout' ? 'cursor-not-allowed' : ''}`} disabled={router.pathname == '/checkout'}>Checkout Now</button>
                 </div>
             </div>
         </div>

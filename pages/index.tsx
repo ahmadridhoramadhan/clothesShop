@@ -34,7 +34,7 @@ export default function Index() {
         </section>
         <div className="overflow-hidden">
           <section className="my-60 mx-auto max-w-7xl gap-10 p-10 md:flex xl:gap-20">
-            <div className="basis-3/4 bg-slate-200 relative h-72" data-aos="fade-up-right"><Image src="" alt="something" fill /></div>
+            <div className="basis-3/4 relative h-72" data-aos="fade-up-right"><Image src={dummyImage} alt="something" fill /></div>
             <div className="flex-auto" data-aos="fade-down-left">
               <p className="mt-7 break-words text-justify xl:mt-28">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas magnam commodi, laudantium odit odio, aliquid repellat possimus expedita sapiente modi incidunt ipsum nisi dolorum quae sed pariatur, ducimus nobis reprehenderit?</p>
               <button className={buttonStyle}>button</button>
@@ -46,11 +46,11 @@ export default function Index() {
               <p className="mt-7 break-words text-justify xl:mt-28">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas magnam commodi, laudantium odit odio, aliquid repellat possimus expedita sapiente modi incidunt ipsum nisi dolorum quae sed pariatur, ducimus nobis reprehenderit?</p>
               <button className={buttonStyle}>button</button>
             </div>
-            <div className="basis-3/4 bg-slate-200 relative h-72" data-aos="fade-left"><Image src="" alt="something" fill /></div>
+            <div className="basis-3/4 relative h-72" data-aos="fade-left"><Image src={dummyImage} alt="something" fill /></div>
           </section>
 
           <section className="my-60 mx-auto max-w-7xl gap-10 p-10 md:flex xl:gap-20">
-            <div className="basis-3/4 bg-slate-200 relative h-72" data-aos="zoom-in-right"><Image src="" alt="something" fill /></div>
+            <div className="basis-3/4 relative h-72" data-aos="zoom-in-right"><Image src={dummyImage} alt="something" fill /></div>
             <div className="flex-auto" data-aos="zoom-in-left">
               <p className="mt-7 break-words text-justify xl:mt-28">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas magnam commodi, laudantium odit odio, aliquid repellat possimus expedita sapiente modi incidunt ipsum nisi dolorum quae sed pariatur, ducimus nobis reprehenderit?</p>
               <button className={buttonStyle}>button</button>
