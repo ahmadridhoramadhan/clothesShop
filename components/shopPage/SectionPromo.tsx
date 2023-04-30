@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import dummyImage from "@/public/favicon.ico"
+import { ChevronRight } from "../icons/ChevronRight";
+import { ChevronLeft } from "../icons/ChevronLeft";
 
 export default function SectionPromo(): JSX.Element {
     const firstSlide = useRef<HTMLDivElement>(null!);
@@ -72,16 +74,8 @@ export default function SectionPromo(): JSX.Element {
             </div>
 
 
-            <button className="absolute sm:left-7 left-4 bottom-1/2 sm:scale-150 scale-105 rounded-full bg-black/10 text-white lg:hidden" onClick={(second) ? handleFirstSlide : handleSecondSlide}>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-9 w-9">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                </svg>
-            </button>
-            <button className="absolute sm:right-7 right-4 bottom-1/2 sm:scale-150 scale-105 rounded-full bg-black/10 text-white lg:hidden" onClick={(first) ? handleSecondSlide : handleFirstSlide}>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-9 w-9">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-            </button>
+            <button className="absolute sm:left-7 left-4 bottom-1/2 sm:scale-150 scale-105 rounded-full bg-black/10 text-white lg:hidden" onClick={(second) ? handleFirstSlide : handleSecondSlide}><ChevronLeft /></button>
+            <button className="absolute sm:right-7 right-4 bottom-1/2 sm:scale-150 scale-105 rounded-full bg-black/10 text-white lg:hidden" onClick={(first) ? handleSecondSlide : handleFirstSlide}><ChevronRight /></button>
             <div className="absolute bottom-2 flex h-1 w-full gap-2 px-2 md:bottom-4 md:h-2 md:gap-5 md:px-5 lg:hidden" id="SlideNav">
                 <button className={(first) ? 'inline-block w-full bg-black/90' : 'inline-block w-full bg-black/40'} onClick={handleFirstSlide}></button>
                 <button className={(second) ? 'inline-block w-full bg-black/90' : 'inline-block w-full bg-black/40'} onClick={handleSecondSlide}></button>

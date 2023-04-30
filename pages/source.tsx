@@ -1,6 +1,8 @@
 import { AddressIcon } from "@/components/icons/AddressIcon"
 import { BurgerMenuIcon } from "@/components/icons/BurgerMenuIcon"
 import { CartIcon } from "@/components/icons/CartIcon"
+import { ChevronLeft } from "@/components/icons/ChevronLeft"
+import { ChevronRight } from "@/components/icons/ChevronRight"
 import { EmailIcon } from "@/components/icons/EmailIcon"
 import { MinusIcon } from "@/components/icons/MinusIcon"
 import { PlusIcon } from "@/components/icons/PlusIcon"
@@ -74,6 +76,8 @@ export default function source() {
                                 <SourceIcon ><TelephoneIcon /></SourceIcon>
                                 <SourceIcon ><BurgerMenuIcon /></SourceIcon>
                                 <SourceIcon ><MinusIcon /></SourceIcon>
+                                <SourceIcon ><ChevronLeft /></SourceIcon>
+                                <SourceIcon ><ChevronRight /></SourceIcon>
                             </div>
                         </div>
 

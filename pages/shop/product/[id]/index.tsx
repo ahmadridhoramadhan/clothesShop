@@ -4,17 +4,11 @@ import ProductSelectSize from "@/components/detailProductPage/ProductSelectSize"
 import Layout from "@/components/layouts";
 import ProductInterface from "@/utils/interface/ProductInterface";
 import { useRouter } from "next/router";
-import React, { ChangeEvent, createContext, useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import { Cookies } from "react-cookie";
-import CarouselImageProduct from "../../../../components/detailProductPage/CarouselImageProduct";
+import SliderImageProduct from "../../../../components/detailProductPage/SliderImageProduct";
 import { ProductDescription } from "../../../../components/detailProductPage/ProductDescription";
 import { refreshCartListContext } from "@/components/cart";
-
-// export const refreshCartListContext = createContext<{
-//     refreshCartState: boolean;
-//     setRefreshCartState: React.Dispatch<React.SetStateAction<boolean>>;
-// }>({ refreshCartState: false, setRefreshCartState: () => { } })
-
 
 interface AddToCartInterface {
     color: string
@@ -124,7 +118,7 @@ export default function DetailProduct({ product }: { product: ProductInterface }
                         </div>
 
                         <div className="basis-3/4 md:p-5 p-2">
-                            <CarouselImageProduct product={product} />
+                            <SliderImageProduct product={product} />
                         </div>
 
                         <div className="flex flex-auto flex-col px-2 justify-evenly pb-40">
