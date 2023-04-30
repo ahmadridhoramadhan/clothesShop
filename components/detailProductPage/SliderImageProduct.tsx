@@ -3,11 +3,13 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { ChevronLeft } from "../icons/ChevronLeft";
 import { ChevronRight } from "../icons/ChevronRight";
+import { useRouter } from "next/router";
 
 export default function SliderImageProduct({ product, additional_class }: { product: ProductInterface; additional_class?: string }): JSX.Element {
     const [howMuchImage, setHowMuchImage] = useState(0)
     const [visibleImageIndex, setVisibleImageIndex] = useState(0);
     const sliderRef = useRef<HTMLDivElement>(null!);
+    const router = useRouter()
 
     useEffect(() => {
         const options = {
@@ -52,7 +54,7 @@ export default function SliderImageProduct({ product, additional_class }: { prod
 
     const imageProductList = product.carousel_images.map((image, index) => (
         <div className="w-full h-full shrink-0 snap-center relative image-container" key={index} data-index={index}>
-            <Image src={`${image.base_url}${image.name}`} alt={image.alt} fill />
+            <Image src={`${router.basePath}${image.base_url}${image.name}`} alt={image.alt} fill />
         </div>
     ));
     return (

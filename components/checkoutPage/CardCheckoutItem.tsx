@@ -1,11 +1,13 @@
 import { imageType } from "@/utils/type/imageType";
 import Image from "next/image";
 import CardCheckoutInterface from "../../utils/interface/CardCheckoutInterface";
+import { useRouter } from "next/router";
 
 export default function CardCheckout({ checkoutItem }: { checkoutItem: CardCheckoutInterface }): JSX.Element {
+    const router = useRouter()
     return (
         <div className="flex gap-2">
-            <div className="relative md:w-28 md:h-28 w-20 h-20"><Image src={checkoutItem.thumbnail.base_url + checkoutItem.thumbnail.name} alt={checkoutItem.thumbnail.alt} fill priority={false} /></div>
+            <div className="relative md:w-28 md:h-28 w-20 h-20"><Image src={`${router.basePath}${checkoutItem.thumbnail.base_url}${checkoutItem.thumbnail.name}`} alt={checkoutItem.thumbnail.alt} fill priority={false} /></div>
             <div className="flex flex-auto flex-col justify-between overflow-auto">
                 <p className="truncate break-words text-xl">{checkoutItem.name}</p>
                 <div>

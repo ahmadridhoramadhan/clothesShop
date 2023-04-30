@@ -3,11 +3,13 @@ import { useRef, useState, useEffect } from "react";
 import dummyImage from "@/public/favicon.ico"
 import { ChevronRight } from "../icons/ChevronRight";
 import { ChevronLeft } from "../icons/ChevronLeft";
+import { useRouter } from "next/router";
 
 export default function SectionPromo(): JSX.Element {
     const firstSlide = useRef<HTMLDivElement>(null!);
     const secondSlide = useRef<HTMLDivElement>(null!);
     const containerRef = useRef<HTMLDivElement>(null!);
+    const router = useRouter()
 
     const [second, setSecond] = useState(false);
     const [first, setFirst] = useState(true);

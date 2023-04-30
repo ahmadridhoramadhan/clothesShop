@@ -8,10 +8,12 @@ import { cardCartItemInterface } from "./cardCartItemInterface";
 
 import Link from "next/link";
 import { refreshCartListContext } from ".";
+import { useRouter } from "next/router";
 
 export function CardCartItem({ cartItem }: { cartItem: cardCartItemInterface }): JSX.Element {
     const cookies = useMemo(() => new Cookies(), []);
     const thumbnail = JSON.parse(cartItem.thumbnail) as imageType
+    const router = useRouter()
 
     // TODO:make this cart always update so if the product runs out it will be disabled or if the stock is changed so that you cannot order past the stock limit
     const [quantity, setQuantity] = useState(cartItem.quantity);
@@ -95,7 +97,7 @@ export function CardCartItem({ cartItem }: { cartItem: cardCartItemInterface }):
         <div className="w-full flex border-b gap-3 p-1 box-border items-center mt-4 pl-3">
             <input type="hidden" name="checkoutItems[]" value={JSON.stringify(checkoutItem)} />
             <Link href={`shop/product/${cartItem.id}`}>
-                <div className="overflow-hidden h-20 w-20 relative"><Image src={thumbnail.base_url + thumbnail.name} alt={thumbnail.alt} fill priority={false} /></div>
+                <div className="overflow-hidden h-20 w-20 relative"><Image src={`${router.basePath}${thumbnail.base_url}${thumbnail.name}`} alt={thumbnail.alt} fill priority={false} /></div>
             </Link>
             <div className="overflow-hidden flex-auto">
                 <p className="text-xl truncate">{cartItem.name}</p>
