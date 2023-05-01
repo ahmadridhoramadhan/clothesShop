@@ -4,7 +4,7 @@ export default interface ProductInterface {
     id: number;
     price: number;
     name: string;
-    category: "pants" | "shirt" | "hat" | "shoes";
+    category: "pants" | "shirt" | "hat" | "shoes" | "women clothing";
     total_stock: number;
     carousel_images: Array<imageType>;
     thumbnail_global: imageType;

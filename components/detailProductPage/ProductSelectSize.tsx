@@ -18,7 +18,7 @@ export default function ProductSelectSize({ selected_color_value, product }: Sel
         }
     });
     return (
-        <div className="mt-3 border-y-2 py-2">
+        <div className="mt-3 border-y-2 py-2 overflow-auto">
             <div className="text-sm font-semibold">Size : <span className="font-semibold text-xl">{selectedSize ? (JSON.parse(selectedSize).size) : ''}</span></div>
             <ul className="flex mt-3">
                 {list_size}

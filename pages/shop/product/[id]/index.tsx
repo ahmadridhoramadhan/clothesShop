@@ -107,7 +107,6 @@ export default function DetailProduct({ product }: { product: ProductInterface }
 
     const handleSelectedFormValue = (event: ChangeEvent<HTMLInputElement>) => { setSelectedValue(event.target.value) }
 
-
     return (
         <refreshCartListContext.Provider value={{ refreshCartState: refreshCartState, setRefreshCartState: setRefreshCartState }}>
             <Layout title="DetailProduct">
@@ -149,9 +148,10 @@ export default function DetailProduct({ product }: { product: ProductInterface }
 
                     {/* Deskripsi */}
                     <section className="container mx-auto">
-
+                        <div className="mb-40 mt-10 border-2 p-5 border-black shadow-lg">
+                            <pre className="break-words break-all overflow-auto">{product.short_product_description}</pre>
+                        </div>
                         <ProductDescription product={product} />
-
                     </section>
 
                     {/* Product yang terkait atau di sarankan */}

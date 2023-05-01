@@ -54,7 +54,7 @@ export default function SliderImageProduct({ product, additional_class }: { prod
 
     const imageProductList = product.carousel_images.map((image, index) => (
         <div className="w-full h-full shrink-0 snap-center relative image-container" key={index} data-index={index}>
-            <Image src={`${router.basePath}${image.base_url}${image.name}`} alt={image.alt} fill />
+            <Image src={`${router.basePath}${image.base_url}${image.name}`} alt={image.alt} fill className="object-contain" />
         </div>
     ));
     return (

@@ -68,8 +68,8 @@ export default function SectionPromo(): JSX.Element {
 
             <div id="slide" className="overflow-auto shadow-lg rounded-sm w-full h-full snap-x snap-mandatory scrollbar-hide" ref={containerRef}>
                 <div className="w-full h-full flex flex-nowrap">
-                    <div className="w-full h-full flex-shrink-0 lg:flex-shrink snap-start relative image-container after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:content-['MAN'] after:text-white after:font-bold after:text-5xl" data-index={1} id="item-1" ref={firstSlide}><Image src={manOutfit} alt="" fill /></div>
-                    <div className="w-full h-full flex-shrink-0 lg:flex-shrink snap-end relative image-container after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:content-['WOMAN'] after:text-white after:font-bold after:text-5xl" data-index={2} id="item-2" ref={secondSlide}><Image src={womanOutfit} alt="" fill /></div>
+                    <div className="w-full h-full flex-shrink-0 lg:flex-shrink snap-start relative image-container after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:content-['MAN'] after:text-white after:font-bold after:text-5xl" data-index={1} id="item-1" ref={firstSlide}><Image src={manOutfit} alt="" className="object-cover" fill /></div>
+                    <div className="w-full h-full flex-shrink-0 lg:flex-shrink snap-end relative image-container after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:content-['WOMAN'] after:text-white after:font-bold after:text-5xl" data-index={2} id="item-2" ref={secondSlide}><Image src={womanOutfit} alt="" className="object-cover" fill /></div>
                 </div>
             </div>
 

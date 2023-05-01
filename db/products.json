@@ -1,33 +1,49 @@
 [
     {
         "id": 1,
-        "price": 250000,
-        "name": "Product A",
-        "total_stock": 10,
-        "category": "shirt",
+        "price": 52292,
+        "name": "Porto - Sandal Jepit Pria Kuat dan Nyaman Anti Slip Anti Jamur",
+        "total_stock": 1347,
+        "category": "shoes",
+        "for": "man",
         "carousel_images": [
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "hitam2.jpg",
+                "base_url": "/shop/products/Porto-Sandal_Jepit_Pria_Kuat_dan_Nyaman_Anti_Slip_Anti_Jamur_Original_1028M/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "abu-abu2.jpg",
+                "base_url": "/shop/products/Porto-Sandal_Jepit_Pria_Kuat_dan_Nyaman_Anti_Slip_Anti_Jamur_Original_1028M/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "hitam1.jpg",
+                "base_url": "/shop/products/Porto-Sandal_Jepit_Pria_Kuat_dan_Nyaman_Anti_Slip_Anti_Jamur_Original_1028M/"
+            },
+            {
+                "alt": "product",
+                "name": "abu-abu1.jpg",
+                "base_url": "/shop/products/Porto-Sandal_Jepit_Pria_Kuat_dan_Nyaman_Anti_Slip_Anti_Jamur_Original_1028M/"
+            },
+            {
+                "alt": "product",
+                "name": "khaki1.jpg",
+                "base_url": "/shop/products/Porto-Sandal_Jepit_Pria_Kuat_dan_Nyaman_Anti_Slip_Anti_Jamur_Original_1028M/"
+            },
+            {
+                "alt": "product",
+                "name": "cokelat1.jpg",
+                "base_url": "/shop/products/Porto-Sandal_Jepit_Pria_Kuat_dan_Nyaman_Anti_Slip_Anti_Jamur_Original_1028M/"
             }
         ],
         "thumbnail_global": {
             "alt": "product",
-            "name": "favicon.ico",
-            "base_url": "/"
+            "name": "hitam2.jpg",
+            "base_url": "/shop/products/Porto-Sandal_Jepit_Pria_Kuat_dan_Nyaman_Anti_Slip_Anti_Jamur_Original_1028M/"
         },
-        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
+        "short_product_description": "Sandal Jepit 1028M dengan material Karet kuat membuat sandal ini awet, tahan lama, dan nyaman dipakai. Memiliki 4 pilihan warna yang keren dan hiasan strap pada bagian pinggir kanan dan kiri sandal. Lengkap dengan anti slip yang membuat sandal ini anti licin dan cocok untuk menemani segala aktivitasmu.\n\nUkuran : 39-44\nBahan : Kulit sintetis dan Karet Kuat\n\nSize Chart MEN Sandal\n39: 24,\n\t0 - 25,\n\t0 CM\n40: 25,\n\t1 - 26,\n\t0 CM\n41: 26,\n\t1 - 27,\n\t0 CM\n42: 27,\n\t1 - 27,\n\t5 CM\n43: 27,\n\t6 - 28,\n\t0 CM\n44: 28,\n\t0 - 29,\n\t0 CM\n\nKenapa harus menggunakan footwear dari Porto Official ?\n- Tahan lama dan ringan\n- Menggunakan teknologi 'lightweight' yang telah disesuaikan dengan standard kaki lokal untuk kenyamanan beraktivitas seharian\n- Perpaduan material berkualitas dan sol yang empuk, sehingga tidak lelah ketika dipakai seharian\n- Desain elegan dengan warna yang menarik dan variatif\n- Sangat cocok dipakai dalam segala aktivitas\n\nHow To Take Care Your Porto.\n1. Hindari menyimpan Sandal/Sepatu Porto berbahan Jelly Dan Eva di tempat yang suhunya terlalu panas, agar kualitas Sandal/Sepatu tetap terjaga.\n2. Selalu perhatikan ketika mencuci atau membersihkan Sandal/Sepatu Berbahan Jelly Dan Eva , agar daya rekat lemnya lebih tahan lama.\n\nNOTE:\n- Jika ada varian kosong, CS akan info dalam 1x24 Jam. Jika tidak ada balasan, akan dikirimkan Random.\n- 1kg = 3 pairs\n- Untuk kaki besar, disarankan untuk mengambil 1 ukuran di atasnya\n- Jika terjadi kendala apapun, dimohon untuk info kepada admin toko kami melalui chat\n- Jika puas, dimohon untuk memberikan ulasan bintang 5, jika kurang puas dimohon untuk konfirmasi kembali kepada admin kami mengenai masalah yang dialami untuk menemukan solusi yang terbaik\nBerat: 350gr",
         "descriptions": [
             {
                 "img": {
@@ -48,89 +64,174 @@
         ],
         "products": [
             {
-                "color": "red",
+                "color": "abu-abu",
                 "available_sizes": [
                     {
-                        "stock": 5,
-                        "size": "XL"
+                        "stock": 30,
+                        "size": 39
                     },
                     {
-                        "stock": 3,
-                        "size": "L"
+                        "stock": 10,
+                        "size": 40
                     },
                     {
-                        "stock": 2,
-                        "size": "M"
-                    }
-                ],
-                "thumbnail": {
-                    "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
-                }
-            },
-            {
-                "color": "blue",
-                "available_sizes": [
-                    {
-                        "stock": 4,
-                        "size": "L"
+                        "stock": 60,
+                        "size": 41
                     },
                     {
-                        "stock": 3,
-                        "size": "M"
+                        "stock": 40,
+                        "size": 42
                     },
                     {
                         "stock": 1,
-                        "size": "XL"
+                        "size": 43
+                    },
+                    {
+                        "stock": 5,
+                        "size": 44
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "abu-abu2.jpg",
+                    "base_url": "/shop/products/Porto-Sandal_Jepit_Pria_Kuat_dan_Nyaman_Anti_Slip_Anti_Jamur_Original_1028M/"
+                }
+            },
+            {
+                "color": "hitam",
+                "available_sizes": [
+                    {
+                        "stock": 30,
+                        "size": 39
+                    },
+                    {
+                        "stock": 10,
+                        "size": 40
+                    },
+                    {
+                        "stock": 60,
+                        "size": 41
+                    },
+                    {
+                        "stock": 40,
+                        "size": 42
+                    },
+                    {
+                        "stock": 1,
+                        "size": 43
+                    },
+                    {
+                        "stock": 5,
+                        "size": 44
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "hitam1.jpg",
+                    "base_url": "/shop/products/Porto-Sandal_Jepit_Pria_Kuat_dan_Nyaman_Anti_Slip_Anti_Jamur_Original_1028M/"
+                }
+            },
+            {
+                "color": "khaki",
+                "available_sizes": [
+                    {
+                        "stock": 30,
+                        "size": 39
+                    },
+                    {
+                        "stock": 10,
+                        "size": 40
+                    },
+                    {
+                        "stock": 60,
+                        "size": 41
+                    },
+                    {
+                        "stock": 40,
+                        "size": 42
+                    },
+                    {
+                        "stock": 1,
+                        "size": 43
+                    },
+                    {
+                        "stock": 5,
+                        "size": 44
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "khaki1.jpg",
+                    "base_url": "/shop/products/Porto-Sandal_Jepit_Pria_Kuat_dan_Nyaman_Anti_Slip_Anti_Jamur_Original_1028M/"
+                }
+            },
+            {
+                "color": "cokelat",
+                "available_sizes": [
+                    {
+                        "stock": 30,
+                        "size": 39
+                    },
+                    {
+                        "stock": 10,
+                        "size": 40
+                    },
+                    {
+                        "stock": 60,
+                        "size": 41
+                    },
+                    {
+                        "stock": 40,
+                        "size": 42
+                    },
+                    {
+                        "stock": 1,
+                        "size": 43
+                    },
+                    {
+                        "stock": 5,
+                        "size": 44
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "cokelat1.jpg",
+                    "base_url": "/shop/products/Porto-Sandal_Jepit_Pria_Kuat_dan_Nyaman_Anti_Slip_Anti_Jamur_Original_1028M/"
                 }
             }
         ]
     },
     {
         "id": 2,
-        "price": 3250000,
-        "name": "Product B",
-        "total_stock": 54,
+        "price": 148665,
+        "name": "Eagle - Sandal Gunung - CONNEC - DIENG",
+        "total_stock": 1347,
         "category": "shoes",
+        "for": "man",
         "carousel_images": [
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "hitam1.jpg",
+                "base_url": "/shop/products/Eagle-Sandal_Gunun_CONNEC-DIENG/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "cokelat1.jpg",
+                "base_url": "/shop/products/Eagle-Sandal_Gunun_CONNEC-DIENG/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "hijau1.jpg",
+                "base_url": "/shop/products/Eagle-Sandal_Gunun_CONNEC-DIENG/"
             }
         ],
         "thumbnail_global": {
             "alt": "product",
-            "name": "favicon.ico",
-            "base_url": "/"
+            "name": "hitam1.jpg",
+            "base_url": "/shop/products/Eagle-Sandal_Gunun_CONNEC-DIENG/"
         },
-        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
+        "short_product_description": "Spesifikasi :\n- Extreme rubber outsole grip, for strong grip\n- EVA pads are embossed in the midsole for the comfort of your feet\n- Hyper Soft insole, make comfort and plush insole.\n- Lining : Hi-Knitted Webbing\n- Upper : Rubber and webbing textile\n- Insole : Embossed EVA\n- Outsole : 3D Rugged Rubber\n\nTersedia di warna :\n- Hitam\n- Coral\n\nTersedia di size 39 - 43\nSize Chart : 39= 23,\n\t5-24 cm\n40= 24-24,\n\t8 cm\n41= 24,\n\t8-25,\n\t5 cm\n42= 25,\n\t5-26cm\n43= 26-26,\n\t8 cm\nBerat: 1000gr",
         "descriptions": [
-            {
-                "img": {
-                    "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
-                },
-                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
-            },
             {
                 "img": {
                     "alt": "product",
@@ -150,115 +251,148 @@
         ],
         "products": [
             {
-                "color": "red",
+                "color": "hitam",
                 "available_sizes": [
                     {
-                        "stock": 5,
+                        "stock": 30,
                         "size": 39
                     },
                     {
-                        "stock": 3,
+                        "stock": 10,
                         "size": 40
                     },
                     {
-                        "stock": 2,
-                        "size": 40
-                    },
-                    {
-                        "stock": 19,
+                        "stock": 60,
                         "size": 41
+                    },
+                    {
+                        "stock": 40,
+                        "size": 42
+                    },
+                    {
+                        "stock": 1,
+                        "size": 43
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "hitam1.jpg",
+                    "base_url": "/shop/products/Eagle-Sandal_Gunun_CONNEC-DIENG/"
                 }
             },
             {
-                "color": "blue",
+                "color": "cokelat",
                 "available_sizes": [
                     {
-                        "stock": 4,
+                        "stock": 30,
                         "size": 39
                     },
                     {
-                        "stock": 3,
+                        "stock": 10,
                         "size": 40
                     },
                     {
-                        "stock": 5,
+                        "stock": 60,
                         "size": 41
+                    },
+                    {
+                        "stock": 40,
+                        "size": 42
+                    },
+                    {
+                        "stock": 1,
+                        "size": 43
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "cokelat1.jpg",
+                    "base_url": "/shop/products/Eagle-Sandal_Gunun_CONNEC-DIENG/"
                 }
             },
             {
-                "color": "green",
+                "color": "hijau",
                 "available_sizes": [
                     {
-                        "stock": 4,
+                        "stock": 30,
                         "size": 39
                     },
                     {
-                        "stock": 3,
+                        "stock": 10,
                         "size": 40
                     },
                     {
-                        "stock": 5,
+                        "stock": 60,
                         "size": 41
+                    },
+                    {
+                        "stock": 40,
+                        "size": 42
+                    },
+                    {
+                        "stock": 1,
+                        "size": 43
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "hijau1.jpg",
+                    "base_url": "/shop/products/Eagle-Sandal_Gunun_CONNEC-DIENG/"
                 }
             }
         ]
     },
     {
         "id": 3,
-        "price": 1250000,
-        "name": "Product C",
-        "total_stock": 54,
-        "category": "shoes",
+        "price": 149000,
+        "name": "Marua Inner Dress - Dusty Pink all variant",
+        "total_stock": 1347,
+        "category": "women clothing",
+        "for": "woman",
         "carousel_images": [
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "dustyPink1.jpg",
+                "base_url": "/shop/products/Marua_Inner_Dress-Dusty_Pink/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "dustyPink2.jpg",
+                "base_url": "/shop/products/Marua_Inner_Dress-Dusty_Pink/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "dustyPink3.jpg",
+                "base_url": "/shop/products/Marua_Inner_Dress-Dusty_Pink/"
+            },
+            {
+                "alt": "product",
+                "name": "dustyPink4.jpg",
+                "base_url": "/shop/products/Marua_Inner_Dress-Dusty_Pink/"
+            },
+            {
+                "alt": "product",
+                "name": "dustyPink5.jpg",
+                "base_url": "/shop/products/Marua_Inner_Dress-Dusty_Pink/"
+            },
+            {
+                "alt": "product",
+                "name": "dustyPink6.jpg",
+                "base_url": "/shop/products/Marua_Inner_Dress-Dusty_Pink/"
+            },
+            {
+                "alt": "product",
+                "name": "dustyPink7.jpg",
+                "base_url": "/shop/products/Marua_Inner_Dress-Dusty_Pink/"
             }
         ],
         "thumbnail_global": {
             "alt": "product",
-            "name": "favicon.ico",
-            "base_url": "/"
+            "name": "dustyPink1.jpg",
+            "base_url": "/shop/products/Marua_Inner_Dress-Dusty_Pink/"
         },
-        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
+        "short_product_description": "Marua Inner Dress merupakan dress simple dengan paduan warna fresh yang dapat\ndipadu padankan untuk menemani aktivitas sehari-hari seperti ngantor sampai\nhangout. Sehingga tampilan Anda menjadi lebih stylish dan tetap cantik.  \n\n\nSIZE CHART\n\n\n\nLingkar Dada 110 cm\n\nPanjang Baju 120 cm \n\nLingkar ketiak 54cm\n\nLebar Bahu 35cm\n\nBisa untuk max BB 70 kg dan max TB 170 cm\n\n\nFABRICATION\n\n\n\nBahan Rayon Premium yang ringan, tidak terawang serta mudah menyerap keringat.\bDengan cara perawatan yang mudah cukup rendam Marua Inner Dress dengan air dan\ndeterjen secukupnya selama 10 menit. Bila ada noda yang membandel sebaiknya\ndikucek pelan dengan tangan. Hindari menggunakan pelembut dan pewangi pakaian\nagar Marua Inner Dress tidak gampang kusam. Setelah dibilas, keringkan Marua\nInner Dress dengan cara diangin-angin atau di-setrika dengan suhu 148 ° C (300 °F).",
         "descriptions": [
-            {
-                "img": {
-                    "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
-                },
-                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
-            },
             {
                 "img": {
                     "alt": "product",
@@ -278,115 +412,52 @@
         ],
         "products": [
             {
-                "color": "red",
+                "color": "dusty Pink",
                 "available_sizes": [
                     {
-                        "stock": 5,
-                        "size": 39
-                    },
-                    {
-                        "stock": 3,
-                        "size": 40
-                    },
-                    {
-                        "stock": 2,
-                        "size": 40
-                    },
-                    {
-                        "stock": 19,
-                        "size": 41
+                        "stock": 30,
+                        "size": "all variant"
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
-                }
-            },
-            {
-                "color": "blue",
-                "available_sizes": [
-                    {
-                        "stock": 4,
-                        "size": 39
-                    },
-                    {
-                        "stock": 3,
-                        "size": 40
-                    },
-                    {
-                        "stock": 5,
-                        "size": 41
-                    }
-                ],
-                "thumbnail": {
-                    "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
-                }
-            },
-            {
-                "color": "green",
-                "available_sizes": [
-                    {
-                        "stock": 4,
-                        "size": 39
-                    },
-                    {
-                        "stock": 3,
-                        "size": 40
-                    },
-                    {
-                        "stock": 5,
-                        "size": 41
-                    }
-                ],
-                "thumbnail": {
-                    "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "dustyPink1.jpg",
+                    "base_url": "/shop/products/Marua_Inner_Dress-Dusty_Pink/"
                 }
             }
         ]
     },
     {
         "id": 4,
-        "price": 1250000,
-        "name": "Product D",
-        "total_stock": 54,
-        "category": "shoes",
+        "price": 245000,
+        "name": "CBR Six - Gamis Wanita Oxford Okc607",
+        "total_stock": 1347,
+        "category": "women clothing",
+        "for": "woman",
         "carousel_images": [
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "cokelat1.jpg",
+                "base_url": "/shop/products/CBR_Six-Gamis_Wanita_Oxford_Okc607/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "cokelat2.jpg",
+                "base_url": "/shop/products/CBR_Six-Gamis_Wanita_Oxford_Okc607/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "cokelat3.jpg",
+                "base_url": "/shop/products/CBR_Six-Gamis_Wanita_Oxford_Okc607/"
             }
         ],
         "thumbnail_global": {
             "alt": "product",
-            "name": "favicon.ico",
-            "base_url": "/"
+            "name": "cokelat1.jpg",
+            "base_url": "/shop/products/CBR_Six-Gamis_Wanita_Oxford_Okc607/"
         },
-        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
+        "short_product_description": "GAMIS WANITA dari CBR SIX:\n- Warna: COKLAT KOMBINASI\n- Bahan: OXFORD\n- Ukuran: Tersedia Satu Ukuran\n\nPanjang lengan x Lingkar Dada x Lingkar Pinggang x Lingkar Pinggul x Lingkar bawah x Panjang \n- One size fit to L (60cm x 106cm x 100cm x 112cm x 240cm x 140cm) \n\nCare Label : \n- Cuci terpisah\n- Gunakan detergen lembut\n- Hindari sinar matahari langsung\n- Jangan gunakan pemutih\n- Setrika suhu rendah",
         "descriptions": [
-            {
-                "img": {
-                    "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
-                },
-                "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!"
-            },
             {
                 "img": {
                     "alt": "product",
@@ -406,106 +477,51 @@
         ],
         "products": [
             {
-                "color": "red",
+                "color": "cokelat",
                 "available_sizes": [
                     {
-                        "stock": 5,
-                        "size": 39
-                    },
-                    {
-                        "stock": 3,
-                        "size": 40
-                    },
-                    {
-                        "stock": 2,
-                        "size": 40
-                    },
-                    {
-                        "stock": 19,
-                        "size": 41
+                        "stock": 30,
+                        "size": "all size fit L"
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
-                }
-            },
-            {
-                "color": "blue",
-                "available_sizes": [
-                    {
-                        "stock": 4,
-                        "size": 39
-                    },
-                    {
-                        "stock": 3,
-                        "size": 40
-                    },
-                    {
-                        "stock": 5,
-                        "size": 41
-                    }
-                ],
-                "thumbnail": {
-                    "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
-                }
-            },
-            {
-                "color": "green",
-                "available_sizes": [
-                    {
-                        "stock": 4,
-                        "size": 39
-                    },
-                    {
-                        "stock": 3,
-                        "size": 40
-                    },
-                    {
-                        "stock": 5,
-                        "size": 41
-                    }
-                ],
-                "thumbnail": {
-                    "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "cokelat1.jpg",
+                    "base_url": "/shop/products/CBR_Six-Gamis_Wanita_Oxford_Okc607/"
                 }
             }
         ]
     },
     {
         "id": 5,
-        "price": 250000,
-        "name": "Product E",
-        "total_stock": 10,
-        "category": "shirt",
+        "price": 245000,
+        "name": "CBR Six - Gamis Wanita Oxford Okc610",
+        "total_stock": 1347,
+        "category": "women clothing",
+        "for": "woman",
         "carousel_images": [
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "biru1.jpg",
+                "base_url": "/shop/products/CBR_Six-Gamis_Wanita_Oxford_Okc610/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "biru2.jpg",
+                "base_url": "/shop/products/CBR_Six-Gamis_Wanita_Oxford_Okc610/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "biru3.jpg",
+                "base_url": "/shop/products/CBR_Six-Gamis_Wanita_Oxford_Okc610/"
             }
         ],
         "thumbnail_global": {
             "alt": "product",
-            "name": "favicon.ico",
-            "base_url": "/"
+            "name": "biru1.jpg",
+            "base_url": "/shop/products/CBR_Six-Gamis_Wanita_Oxford_Okc610/"
         },
-        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
+        "short_product_description": "GAMIS WANITA dari CBR SIX:\n- Warna: BIRU KOMBINASI\n- Bahan: OXFORD\n- Ukuran: Tersedia Satu Ukuran\n\nPanjang lengan x Lingkar Dada x Lingkar Pinggang x Lingkar Pinggul x Lingkar bawah x Panjang \n- One size fit to L (60cm x 106cm x 100cm x 112cm x 240cm x 140cm) \n\nCare Label : \n- Cuci terpisah\n- Gunakan detergen lembut\n- Hindari sinar matahari langsung\n- Jangan gunakan pemutih\n- Setrika suhu rendah",
         "descriptions": [
             {
                 "img": {
@@ -526,80 +542,66 @@
         ],
         "products": [
             {
-                "color": "red",
+                "color": "biru",
                 "available_sizes": [
                     {
-                        "stock": 5,
-                        "size": "XL"
-                    },
-                    {
-                        "stock": 3,
-                        "size": "L"
-                    },
-                    {
-                        "stock": 2,
-                        "size": "M"
+                        "stock": 30,
+                        "size": "all size fit L"
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
-                }
-            },
-            {
-                "color": "blue",
-                "available_sizes": [
-                    {
-                        "stock": 4,
-                        "size": "L"
-                    },
-                    {
-                        "stock": 3,
-                        "size": "M"
-                    },
-                    {
-                        "stock": 1,
-                        "size": "XL"
-                    }
-                ],
-                "thumbnail": {
-                    "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "biru1.jpg",
+                    "base_url": "/shop/products/CBR_Six-Gamis_Wanita_Oxford_Okc610/"
                 }
             }
         ]
     },
     {
         "id": 6,
-        "price": 250000,
-        "name": "Product E",
-        "total_stock": 10,
-        "category": "shirt",
+        "price": 144267,
+        "name": "ZM Zaskia Mecca - Mala Tunik - Jelita Indonesia - Edisi Derawan",
+        "total_stock": 1347,
+        "category": "women clothing",
+        "for": "woman",
         "carousel_images": [
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "biru1.jpg",
+                "base_url": "/shop/products/Zaskia_Mecca-Mala_Purple_Tunik-Jelita_Indonesia/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "biru2.jpg",
+                "base_url": "/shop/products/Zaskia_Mecca-Mala_Purple_Tunik-Jelita_Indonesia/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "cokelat1.jpg",
+                "base_url": "/shop/products/Zaskia_Mecca-Mala_Purple_Tunik-Jelita_Indonesia/"
+            },
+            {
+                "alt": "product",
+                "name": "cokelat2.jpg",
+                "base_url": "/shop/products/Zaskia_Mecca-Mala_Purple_Tunik-Jelita_Indonesia/"
+            },
+            {
+                "alt": "product",
+                "name": "ungu1.jpg",
+                "base_url": "/shop/products/Zaskia_Mecca-Mala_Purple_Tunik-Jelita_Indonesia/"
+            },
+            {
+                "alt": "product",
+                "name": "ungu2.jpg",
+                "base_url": "/shop/products/Zaskia_Mecca-Mala_Purple_Tunik-Jelita_Indonesia/"
             }
         ],
         "thumbnail_global": {
             "alt": "product",
-            "name": "favicon.ico",
-            "base_url": "/"
+            "name": "biru2.jpg",
+            "base_url": "/shop/products/Zaskia_Mecca-Mala_Purple_Tunik-Jelita_Indonesia/"
         },
-        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
+        "short_product_description": "Mala Tunik cantik edisi derawan, bermotif terinspirasi biota laut dengan detail kerah kemeja, kancing sampai bagian bawah tunik, dan aksen kancing di bagian pergelangan tangan. \nAksen polos pada bagian pundak sampai bawah memberikan ilusi menggunakan outer untuk tunik cantik ini.\nDengan bahan premium woolpeach. Bahan ini mengandung 100% polyester, sifatnya yang flowy, ringan, tidak mudah kusut, dan yang paling penting tidak menerawang sehingga sangat nyaman sekali untuk menemani \naktivitasmu.\n\nGaris pantai bak lukisan, aneka ragam wisata bahari dengan lebih dari 870 jenis biota laut.\nTak ragu menjadikan Pulau Derawan sebagai salah satu surga menawan di timur Kalimantan.\nSeluruh mahakarya Derawan, kami abadikan dalam kecantikan lembaran desain motif kain.\n\nAn Exclusive Jelita Indonesia Collection Series From ZM Zaskia Mecca\nLimited Item\n\nSize Chart\nSize Model\nTB : 168cm\nBB : 54kg\nSize : M\n\nSize S\nLingkar Dada : 96cm\nKerung Lengan : 46cm\nPanjang Lengan : 54cm\nPanjang Tunik : 88cm\n\nSize M\nLingkar Dada : 100cm\nKerung Lengan : 48cm\nPanjang Lengan : 56cm\nPanjang Tunik : 90cm\n\nSize L\nLingkar Dada : 104cm\nKerung Lengan : 50cm\nPanjang Lengan : 58cm\nPanjang Tunik : 92cm\n\nSize XL\nLingkar Dada : 108cm\nKerung Lengan : 52cm\nPanjang Lengan : 60cm\nPanjang Tunik : 94cm\n\nSize XXL\nLingkar Dada : 112cm\nKerung Lengan : 54cm\nPanjang Lengan : 62cm\nPanjang Tunik : 96cm\n\nCara Pencucian\n- Rendam dengan air hangat 40 Derajat Celcius dan tidak lebih dari 10 menit\n- Cuci dengan pakaian yang berwarna serupa\n- Hindari mengeringkan pakaian menggunakan mesin\n- Hindari penggunakan pemutih\n- Setrika dengan suhu medium\n\nNotes:\nAkurasi cahaya pada foto sampai dengan 90%\nDetail ukuran dengan toleransi +-2cm\nSyarat dan ketentuan pengembalian barang:",
         "descriptions": [
             {
                 "img": {
@@ -620,80 +622,132 @@
         ],
         "products": [
             {
-                "color": "red",
+                "color": "biru",
                 "available_sizes": [
                     {
-                        "stock": 5,
+                        "stock": 30,
                         "size": "XL"
                     },
                     {
                         "stock": 3,
-                        "size": "L"
+                        "size": "XXL"
                     },
                     {
-                        "stock": 2,
+                        "stock": 300,
+                        "size": "S"
+                    },
+                    {
+                        "stock": 10,
                         "size": "M"
+                    },
+                    {
+                        "stock": 60,
+                        "size": "L"
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "biru1.jpg",
+                    "base_url": "/shop/products/Zaskia_Mecca-Mala_Purple_Tunik-Jelita_Indonesia/"
                 }
             },
             {
-                "color": "blue",
+                "color": "cokelat",
                 "available_sizes": [
                     {
-                        "stock": 4,
-                        "size": "L"
+                        "stock": 30,
+                        "size": "XL"
                     },
                     {
                         "stock": 3,
+                        "size": "XXL"
+                    },
+                    {
+                        "stock": 300,
+                        "size": "S"
+                    },
+                    {
+                        "stock": 10,
                         "size": "M"
                     },
                     {
-                        "stock": 1,
-                        "size": "XL"
+                        "stock": 60,
+                        "size": "L"
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "cokelat1.jpg",
+                    "base_url": "/shop/products/Zaskia_Mecca-Mala_Purple_Tunik-Jelita_Indonesia/"
+                }
+            },
+            {
+                "color": "ungu",
+                "available_sizes": [
+                    {
+                        "stock": 30,
+                        "size": "XL"
+                    },
+                    {
+                        "stock": 3,
+                        "size": "XXL"
+                    },
+                    {
+                        "stock": 300,
+                        "size": "S"
+                    },
+                    {
+                        "stock": 10,
+                        "size": "M"
+                    },
+                    {
+                        "stock": 60,
+                        "size": "L"
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "ungu1.jpg",
+                    "base_url": "/shop/products/Zaskia_Mecca-Mala_Purple_Tunik-Jelita_Indonesia/"
                 }
             }
         ]
     },
     {
         "id": 7,
-        "price": 250000,
-        "name": "Product E",
-        "total_stock": 10,
-        "category": "shirt",
+        "price": 126000,
+        "name": "MANNANA x Meira Outer Atasan Wanita Women Mina",
+        "total_stock": 1347,
+        "category": "women clothing",
+        "for": "woman",
         "carousel_images": [
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "cokelat1.jpg",
+                "base_url": "/shop/products/MANNANA_x_Meira_Outer_Atasan_Wanita_Women_Mina/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "cokelat2.jpg",
+                "base_url": "/shop/products/MANNANA_x_Meira_Outer_Atasan_Wanita_Women_Mina/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "cokelat3.jpg",
+                "base_url": "/shop/products/MANNANA_x_Meira_Outer_Atasan_Wanita_Women_Mina/"
+            },
+            {
+                "alt": "product",
+                "name": "cokelat4.jpg",
+                "base_url": "/shop/products/MANNANA_x_Meira_Outer_Atasan_Wanita_Women_Mina/"
             }
         ],
         "thumbnail_global": {
             "alt": "product",
-            "name": "favicon.ico",
-            "base_url": "/"
+            "name": "cokelat1.jpg",
+            "base_url": "/shop/products/MANNANA_x_Meira_Outer_Atasan_Wanita_Women_Mina/"
         },
-        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
+        "short_product_description": "Product Descriptions:\nCollaboration Edition Mannana X Meira\nMerekah Collection: Dengan membeli koleksi ini sama saja kamu membantu kami untuk mengurangi pencemaran limbah pakaian karena koleksi “Merekah” mengkombinasikan kain perca dengan kain terbaik. Yuk belanja koleksi “Merekah” Mannana X Meira\n\nOuter Mina ini punya model yang simple dan cocok untuk semua kegiatan. Outer ini juga cocok banget buat kamu yang berhijab maupun non hijab. Di mix ‘n match dengan kemeja, manset, atau tanktop juga cakep banget! Ada saku aktif di kanan dan kiri yang bisa muat simpan uang atau handphone. Worth to buy deh!\nMaterial: Baby Corduroy, Kain Perca\nTersedia warna: Black, Brown\nLingkar Dada: \nFit to M = 85 cm\nFit to XL = 97 cm\nPanjang Baju: 50 cm\nFit to M dan fit to XL\nNOTE: \nKesesuaian warna bisa berbeda karena efek cahaya ataupun kamera. Produk yang diterima tidak sesuai? Atau ada cacat? Jangan takut karena Mannanians bisa mengajukan retur sebelum memberikan review.\n\nSaran pencucian :\n- Cuci secara manual atau menggunakan mesin cuci\n- Jemurlah pakaian dalam posisi bagian luar berada di dalam (terbalik)\n- Atur setrika dengan suhu hangat\n\nJangan lupa review dan bintang 5 ya, Mannanians. Happy Shopping!",
         "descriptions": [
             {
                 "img": {
@@ -714,80 +768,50 @@
         ],
         "products": [
             {
-                "color": "red",
+                "color": "biru",
                 "available_sizes": [
                     {
-                        "stock": 5,
-                        "size": "XL"
-                    },
-                    {
-                        "stock": 3,
-                        "size": "L"
-                    },
-                    {
-                        "stock": 2,
-                        "size": "M"
-                    }
-                ],
-                "thumbnail": {
-                    "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
-                }
-            },
-            {
-                "color": "blue",
-                "available_sizes": [
-                    {
-                        "stock": 4,
-                        "size": "L"
-                    },
-                    {
-                        "stock": 3,
+                        "stock": 30,
                         "size": "M"
                     },
                     {
-                        "stock": 1,
+                        "stock": 3,
                         "size": "XL"
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "cokelat1.jpg",
+                    "base_url": "/shop/products/MANNANA_x_Meira_Outer_Atasan_Wanita_Women_Mina/"
                 }
             }
         ]
     },
     {
         "id": 8,
-        "price": 250000,
-        "name": "Product E",
-        "total_stock": 10,
-        "category": "shirt",
+        "price": 130000,
+        "name": "CBR Six - Sepatu Kasual Slip On Basama 946 ",
+        "total_stock": 1347,
+        "category": "shoes",
+        "for": "woman",
         "carousel_images": [
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "mocca1.jpg",
+                "base_url": "/shop/products/CBR_Six-Sepatu_Kasual_Slip_On_Basama_946/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
-            },
-            {
-                "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "mocca2.jpg",
+                "base_url": "/shop/products/CBR_Six-Sepatu_Kasual_Slip_On_Basama_946/"
             }
         ],
         "thumbnail_global": {
             "alt": "product",
-            "name": "favicon.ico",
-            "base_url": "/"
+            "name": "mocca1.jpg",
+            "base_url": "/shop/products/CBR_Six-Sepatu_Kasual_Slip_On_Basama_946/"
         },
-        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
+        "short_product_description": "SEPATU KASUAL SLIP ON WANITA dari CBR SIX:\n- Bahan: KULIT SYNTETIC, SOL TPR\n- Ukuran: 36,\n\t37,\n\t38,\n\t39,\n\t40\nPanjang Insole : 36: 22-22.6 cm\n37: 22.7-23.4 cm \n38: 23.5-24.4 cm \n39: 24.5-25.3 cm \n40: 25.4-25.8 cm\n\nCare Label :\n- Simpan dalam kotak dengan silika gel\n- Bersihkan dengan kain halus dan lembut\n- Jangan dicuci dengan menggunakan detergent",
         "descriptions": [
             {
                 "img": {
@@ -808,80 +832,62 @@
         ],
         "products": [
             {
-                "color": "red",
+                "color": "mocca",
                 "available_sizes": [
                     {
-                        "stock": 5,
-                        "size": "XL"
-                    },
-                    {
-                        "stock": 3,
-                        "size": "L"
+                        "stock": 30,
+                        "size": 36
                     },
                     {
                         "stock": 2,
-                        "size": "M"
+                        "size": 37
+                    },
+                    {
+                        "stock": 56,
+                        "size": 38
+                    },
+                    {
+                        "stock": 23,
+                        "size": 39
+                    },
+                    {
+                        "stock": 39,
+                        "size": 40
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
-                }
-            },
-            {
-                "color": "blue",
-                "available_sizes": [
-                    {
-                        "stock": 4,
-                        "size": "L"
-                    },
-                    {
-                        "stock": 3,
-                        "size": "M"
-                    },
-                    {
-                        "stock": 1,
-                        "size": "XL"
-                    }
-                ],
-                "thumbnail": {
-                    "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "mocca1.jpg",
+                    "base_url": "/shop/products/CBR_Six-Sepatu_Kasual_Slip_On_Basama_946/"
                 }
             }
         ]
     },
     {
         "id": 9,
-        "price": 250000,
-        "name": "Product E",
-        "total_stock": 10,
-        "category": "shirt",
+        "price": 144000,
+        "name": "Sbr shop - Bawahan Rok Bahan Linen Tercantik ALIGATA SKIRT SB41",
+        "total_stock": 1347,
+        "category": "shoes",
+        "for": "woman",
         "carousel_images": [
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "hitam1.jpg",
+                "base_url": "/shop/products/Sbr_shop-Bawahan_Rok_Bahan_Linen_Tercantik_ALIGATA_SKIRT_SB41/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
-            },
-            {
-                "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "mocca1.jpg",
+                "base_url": "/shop/products/Sbr_shop-Bawahan_Rok_Bahan_Linen_Tercantik_ALIGATA_SKIRT_SB41/"
             }
         ],
         "thumbnail_global": {
             "alt": "product",
-            "name": "favicon.ico",
-            "base_url": "/"
+            "name": "all.jpg",
+            "base_url": "/shop/products/Sbr_shop-Bawahan_Rok_Bahan_Linen_Tercantik_ALIGATA_SKIRT_SB41/"
         },
-        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
+        "short_product_description": "SEPATU KASUAL SLIP ON WANITA dari CBR SIX:\n- Bahan: KULIT SYNTETIC, SOL TPR\n- Ukuran: 36,\n\t37,\n\t38,\n\t39,\n\t40\nPanjang Insole : 36: 22-22.6 cm\n37: 22.7-23.4 cm \n38: 23.5-24.4 cm \n39: 24.5-25.3 cm \n40: 25.4-25.8 cm\n\nCare Label :\n- Simpan dalam kotak dengan silika gel\n- Bersihkan dengan kain halus dan lembut\n- Jangan dicuci dengan menggunakan detergent",
         "descriptions": [
             {
                 "img": {
@@ -902,80 +908,75 @@
         ],
         "products": [
             {
-                "color": "red",
+                "color": "mocca",
                 "available_sizes": [
                     {
-                        "stock": 5,
-                        "size": "XL"
-                    },
-                    {
-                        "stock": 3,
-                        "size": "L"
-                    },
-                    {
-                        "stock": 2,
-                        "size": "M"
+                        "stock": 30,
+                        "size": "all size"
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "mocca1.jpg",
+                    "base_url": "/shop/products/Sbr_shop-Bawahan_Rok_Bahan_Linen_Tercantik_ALIGATA_SKIRT_SB41/"
                 }
             },
             {
-                "color": "blue",
+                "color": "hitam",
                 "available_sizes": [
                     {
-                        "stock": 4,
-                        "size": "L"
-                    },
-                    {
-                        "stock": 3,
-                        "size": "M"
-                    },
-                    {
-                        "stock": 1,
-                        "size": "XL"
+                        "stock": 30,
+                        "size": "all size"
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "hitam1.jpg",
+                    "base_url": "/shop/products/Sbr_shop-Bawahan_Rok_Bahan_Linen_Tercantik_ALIGATA_SKIRT_SB41/"
                 }
             }
         ]
     },
     {
         "id": 10,
-        "price": 250000,
-        "name": "Product E",
-        "total_stock": 10,
-        "category": "shirt",
+        "price": 58410,
+        "name": "Porto - Sepatu Wanita Flatshoes Karet Korea Nyaman Casual Kantor BTM",
+        "total_stock": 1347,
+        "category": "shoes",
+        "for": "woman",
         "carousel_images": [
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "khaki1.jpg",
+                "base_url": "/shop/products/Porto-Sepatu_Wanita_Flatshoes_Karet_Korea_Nyaman_Casual_Kantor_BTM/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "khaki2.jpg",
+                "base_url": "/shop/products/Porto-Sepatu_Wanita_Flatshoes_Karet_Korea_Nyaman_Casual_Kantor_BTM/"
             },
             {
                 "alt": "product",
-                "name": "favicon.ico",
-                "base_url": "/"
+                "name": "hijau1.jpg",
+                "base_url": "/shop/products/Porto-Sepatu_Wanita_Flatshoes_Karet_Korea_Nyaman_Casual_Kantor_BTM/"
+            },
+            {
+                "alt": "product",
+                "name": "abu-abu1.jpg",
+                "base_url": "/shop/products/Porto-Sepatu_Wanita_Flatshoes_Karet_Korea_Nyaman_Casual_Kantor_BTM/"
+            },
+            {
+                "alt": "product",
+                "name": "hitam1.jpg",
+                "base_url": "/shop/products/Porto-Sepatu_Wanita_Flatshoes_Karet_Korea_Nyaman_Casual_Kantor_BTM/"
             }
         ],
         "thumbnail_global": {
             "alt": "product",
-            "name": "favicon.ico",
-            "base_url": "/"
+            "name": "khaki1.jpg",
+            "base_url": "/shop/products/Porto-Sepatu_Wanita_Flatshoes_Karet_Korea_Nyaman_Casual_Kantor_BTM/"
         },
-        "short_product_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est libero consectetur laborum quos voluptatum, quia sed, saepe nemo, esse laboriosam ut quod nostrum natus suscipit officiis pariatur eum blanditiis culpa!",
+        "short_product_description": "Sepatu slip-on karet dari Porto dengan design baru yang lebih modern dan casual.\nBahan lentur dan tidak mudah sobek, cocok untuk kegiatan sehari-hari atau untuk bekerja.\nDengan insole empuk dan bahan karet berkualitas menjadikan sepatu ini nyaman dipakai serta anti slip dan tahan air.\n\nUkuran : 37-40\nBahan: Karet Kuat dan Spons\n\nSize Chart Ladies Sandal & Sepatu\n37: 22,\n\t6 - 23,\n\t5 CM\n38: 23,\n\t6 - 24,\n\t5 CM\n39: 24,\n\t6 - 25,\n\t5 CM\n40: 25,\n\t6 - 26,\n\t5 CM\n\nKenapa harus menggunakan footwear dari Porto Official?\n- Tahan lama dan ringan\n- Menggunakan teknologi 'lightweight' yang telah disesuaikan dengan standard kaki lokal untuk kenyamanan beraktivitas seharian\n- Perpaduan material berkualitas dan sol yang empuk, sehingga tidak lelah ketika dipakai seharian\n- Desain elegan dengan warna yang menarik dan variatif\n- Sangat cocok dipakai dalam segala aktivitas\n\nHow To Take Care Your Porto.\n1. Hindari menyimpan Sandal/Sepatu Porto berbahan Jelly Dan Eva di tempat yang suhunya terlalu panas, agar kualitas Sandal/Sepatu tetap terjaga.\n2. Selalu perhatikan ketika mencuci atau membersihkan Sandal/Sepatu Berbahan Jelly Dan Eva, agar daya rekat lemnya lebih tahan lama.\n\nNOTE:\n- Jika ada varian kosong, CS akan info dalam 1x24 Jam. Jika tidak ada balasan, akan dikirimkan random.\n- 1kg = 3 pairs\n- Untuk kaki besar, disarankan untuk mengambil 1 ukuran di atasnya",
         "descriptions": [
             {
                 "img": {
@@ -996,47 +997,107 @@
         ],
         "products": [
             {
-                "color": "red",
+                "color": "khaki",
                 "available_sizes": [
                     {
-                        "stock": 5,
-                        "size": "XL"
+                        "stock": 30,
+                        "size": 37
                     },
                     {
-                        "stock": 3,
-                        "size": "L"
+                        "stock": 30,
+                        "size": 38
                     },
                     {
-                        "stock": 2,
-                        "size": "M"
+                        "stock": 30,
+                        "size": 39
+                    },
+                    {
+                        "stock": 30,
+                        "size": 40
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "khaki2.jpg",
+                    "base_url": "/shop/products/Sbr_shop-Bawahan_Rok_Bahan_Linen_Tercantik_ALIGATA_SKIRT_SB41/"
                 }
             },
             {
-                "color": "blue",
+                "color": "abu-abu",
                 "available_sizes": [
                     {
-                        "stock": 4,
-                        "size": "L"
+                        "stock": 30,
+                        "size": 37
                     },
                     {
-                        "stock": 3,
-                        "size": "M"
+                        "stock": 30,
+                        "size": 38
                     },
                     {
-                        "stock": 1,
-                        "size": "XL"
+                        "stock": 30,
+                        "size": 39
+                    },
+                    {
+                        "stock": 30,
+                        "size": 40
                     }
                 ],
                 "thumbnail": {
                     "alt": "product",
-                    "name": "favicon.ico",
-                    "base_url": "/"
+                    "name": "abu-abu1.jpg",
+                    "base_url": "/shop/products/Sbr_shop-Bawahan_Rok_Bahan_Linen_Tercantik_ALIGATA_SKIRT_SB41/"
+                }
+            },
+            {
+                "color": "hijau",
+                "available_sizes": [
+                    {
+                        "stock": 30,
+                        "size": 37
+                    },
+                    {
+                        "stock": 30,
+                        "size": 38
+                    },
+                    {
+                        "stock": 30,
+                        "size": 39
+                    },
+                    {
+                        "stock": 30,
+                        "size": 40
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "hijau1.jpg",
+                    "base_url": "/shop/products/Sbr_shop-Bawahan_Rok_Bahan_Linen_Tercantik_ALIGATA_SKIRT_SB41/"
+                }
+            },
+            {
+                "color": "hitam",
+                "available_sizes": [
+                    {
+                        "stock": 30,
+                        "size": 37
+                    },
+                    {
+                        "stock": 30,
+                        "size": 38
+                    },
+                    {
+                        "stock": 30,
+                        "size": 39
+                    },
+                    {
+                        "stock": 30,
+                        "size": 40
+                    }
+                ],
+                "thumbnail": {
+                    "alt": "product",
+                    "name": "hitam1.jpg",
+                    "base_url": "/shop/products/Sbr_shop-Bawahan_Rok_Bahan_Linen_Tercantik_ALIGATA_SKIRT_SB41/"
                 }
             }
         ]
