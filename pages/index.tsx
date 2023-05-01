@@ -38,7 +38,7 @@ export default function Index() {
           <section className="flex flex-col md:flex-row max-w-7xl mx-auto my-60 p-5">
             <div className="basis-[40%] relative aspect-square bg-black" data-aos="fade-up-right"><Image src={image1} alt="" fill /></div>
             <div className="basis-[60%] flex items-start justify-center flex-col md:pl-6" data-aos="fade-down-left">
-              <p className="break-words mt-6 md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam cumque repudiandae placeat porro! Quo, debitis earum vitae explicabo obcaecati cupiditate fugiat veritatis sunt accusantium a praesentium recusandae non atque tempora.</p>
+              <p className="break-words mt-6 md:text-lg">actually this website is not finished and everything in this content is all just fake data but if you are interested in the product that I made here please just <Link href={'https://berikhtiar.com/ahmad.ridh.3e7'} target="_blank" className="text-gray-600">click here</Link></p>
               <button type="button" className="border-2 border-black rounded-md shadow-lg px-4 py-2 hover:bg-black hover:text-white transition-all text-lg md:text-2xl">its Button</button>
             </div>
           </section>
