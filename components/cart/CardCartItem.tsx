@@ -9,6 +9,7 @@ import { cardCartItemInterface } from "./cardCartItemInterface";
 import Link from "next/link";
 import { refreshCartListContext } from ".";
 import { useRouter } from "next/router";
+import { subtle } from "crypto";
 
 export function CardCartItem({ cartItem }: { cartItem: cardCartItemInterface }): JSX.Element {
     const cookies = useMemo(() => new Cookies(), []);
@@ -29,7 +30,18 @@ export function CardCartItem({ cartItem }: { cartItem: cardCartItemInterface }):
     useEffect(() => {
         setSubTotal(cartItem.price * quantity);
         setRefreshCartState(prevRefreshCartState => !prevRefreshCartState);
-    }, [quantity, cartItem.price, setRefreshCartState,])
+    }, [quantity, cartItem.price, setRefreshCartState])
+    useEffect(() => {
+        const checkoutItem = {
+            quantity: quantity,
+            size: cartItem.size,
+            name: cartItem.name,
+            totalPrice: subTotal,
+            thumbnail: JSON.parse(cartItem.thumbnail),
+            color: cartItem.color
+        }
+        setCheckoutItem(checkoutItem)
+    }, [cartItem, subTotal, quantity])
     useEffect(() => {
         const cartItems = cookies.get('cartItems') || [];
         const option = { maxAge: 20 * 24 * 60 * 60, path: '/' }; // 20 days
@@ -50,17 +62,6 @@ export function CardCartItem({ cartItem }: { cartItem: cardCartItemInterface }):
             }
         }
     }, [quantity, cookies, cartItem, setRefreshCartState])
-    useEffect(() => {
-        const checkoutItem = {
-            quantity: quantity,
-            size: cartItem.size,
-            name: cartItem.name,
-            totalPrice: subTotal,
-            thumbnail: JSON.parse(cartItem.thumbnail),
-            color: cartItem.color
-        }
-        setCheckoutItem(checkoutItem)
-    }, [quantity, cartItem, subTotal])
 
 
 

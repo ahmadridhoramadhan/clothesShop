@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
-import dummyImage from "@/public/favicon.ico"
+import manOutfit from '../../public/shop/man.jpg'
+import womanOutfit from '../../public/shop/woman.jpg'
 import { ChevronRight } from "../icons/ChevronRight";
 import { ChevronLeft } from "../icons/ChevronLeft";
 import { useRouter } from "next/router";
@@ -13,6 +14,38 @@ export default function SectionPromo(): JSX.Element {
 
     const [second, setSecond] = useState(false);
     const [first, setFirst] = useState(true);
+
+    const [visibleImageIndex, setVisibleImageIndex] = useState(0);
+    useEffect(() => {
+        const options = {
+            root: containerRef.current,
+            threshold: 0.5,
+        };
+
+        const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+            entries.forEach((entry) => {
+                const index = parseInt((entry.target as HTMLElement).dataset.index!);
+                if (entry.isIntersecting) {
+                    setVisibleImageIndex(index);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(handleIntersection, options);
+        const images = containerRef.current.querySelectorAll('.image-container');
+        images.forEach((image) => observer.observe(image));
+
+        return () => observer.disconnect();
+    }, [containerRef]);
+    useEffect(() => {
+        if (visibleImageIndex == 1) {
+            setFirst(true)
+            setSecond(false)
+        } else {
+            setFirst(false)
+            setSecond(true)
+        }
+    }, [visibleImageIndex])
 
     function handleFirstSlide() {
         firstSlide.current.scrollIntoView({
@@ -29,49 +62,14 @@ export default function SectionPromo(): JSX.Element {
         });
     }
 
-    useEffect(() => {
-        const container = containerRef.current;
-        const firstSlideRef = firstSlide.current;
-        const secondSlideRef = secondSlide.current;
-
-        const handleScroll = () => {
-            const containerScrollLeft = container.scrollLeft;
-            const firstSlideLeft = firstSlideRef.offsetLeft;
-            const secondSlideLeft = secondSlideRef.offsetLeft;
-
-            if (containerScrollLeft >= (secondSlideLeft - 300)) {
-                // Your code to handle second slide in view goes here
-                setSecond(true);
-                setFirst(false);
-            } else if (containerScrollLeft >= firstSlideLeft) {
-                // Your code to handle first slide in view goes here
-                setFirst(true);
-                setSecond(false);
-            }
-        };
-
-        // const interval = setInterval(() => {
-        //     if (first) {
-        //         handleSecondSlide();
-        //     } else if (second) {
-        //         handleFirstSlide();
-        //     }
-        // }, 5000);
-        container.addEventListener('scroll', handleScroll);
-
-        return () => {
-            // clearInterval(interval);
-            container.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     return (
         <section id="promo" className="relative aspect-[5/4] sm:aspect-[6/3] md:mb-20 mb-10">
 
-            <div id="slide" className="overflow-auto rounded-xl w-full h-full snap-x snap-mandatory scrollbar-hide" ref={containerRef}>
+            <div id="slide" className="overflow-auto shadow-lg rounded-sm w-full h-full snap-x snap-mandatory scrollbar-hide" ref={containerRef}>
                 <div className="w-full h-full flex flex-nowrap">
-                    <div className="w-full h-full flex-shrink-0 lg:flex-shrink snap-start relative" id="item-1" ref={firstSlide}><Image src={dummyImage} alt="" fill /></div>
-                    <div className="w-full h-full flex-shrink-0 lg:flex-shrink snap-end relative" id="item-2" ref={secondSlide}><Image src={dummyImage} alt="" fill /></div>
+                    <div className="w-full h-full flex-shrink-0 lg:flex-shrink snap-start relative image-container after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:content-['MAN'] after:text-white after:font-bold after:text-5xl" data-index={1} id="item-1" ref={firstSlide}><Image src={manOutfit} alt="" fill /></div>
+                    <div className="w-full h-full flex-shrink-0 lg:flex-shrink snap-end relative image-container after:absolute after:top-1/2 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:content-['WOMAN'] after:text-white after:font-bold after:text-5xl" data-index={2} id="item-2" ref={secondSlide}><Image src={womanOutfit} alt="" fill /></div>
                 </div>
             </div>
 

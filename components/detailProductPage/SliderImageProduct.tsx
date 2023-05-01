@@ -6,10 +6,10 @@ import { ChevronRight } from "../icons/ChevronRight";
 import { useRouter } from "next/router";
 
 export default function SliderImageProduct({ product, additional_class }: { product: ProductInterface; additional_class?: string }): JSX.Element {
+    const router = useRouter()
     const [howMuchImage, setHowMuchImage] = useState(0)
     const [visibleImageIndex, setVisibleImageIndex] = useState(0);
     const sliderRef = useRef<HTMLDivElement>(null!);
-    const router = useRouter()
 
     useEffect(() => {
         const options = {
@@ -30,8 +30,8 @@ export default function SliderImageProduct({ product, additional_class }: { prod
         const images = sliderRef.current.querySelectorAll('.image-container');
         images.forEach((image) => observer.observe(image));
 
-        return () => observer.disconnect();
         setHowMuchImage(sliderRef.current.querySelectorAll('img').length)
+        return () => observer.disconnect();
     }, [sliderRef]);
 
     const NextSlider = (index: number) => {
@@ -61,6 +61,13 @@ export default function SliderImageProduct({ product, additional_class }: { prod
         <div className={`relative ${additional_class}`} id="SliderImageProduct">
             <button className="absolute left-2 bottom-1/2 bg-black/10 rounded-full text-white z-10" type="button" onClick={() => PrevSlider(visibleImageIndex)}><ChevronLeft /></button>
             <button className="absolute right-2 bottom-1/2 bg-black/10 rounded-full text-white z-10" type="button" onClick={() => NextSlider(visibleImageIndex)}><ChevronRight /></button>
+            <div className="absolute rounded-lg z-10 bottom-0 md:bottom-auto">
+                <div className="relative bg-white/10 inline-block mix-blend-difference">
+                    <span className="absolute left-0 top-0">{visibleImageIndex + 1}</span>
+                    <span className="inline-block w-10 text-center text-4xl">/</span>
+                    <span className="absolute bottom-0 right-0 font-bold">{howMuchImage}</span>
+                </div>
+            </div>
             <div className="scrollbar-hide snap-mandatory scroll-smooth snap-x aspect-video overflow-auto flex flex-nowrap" ref={sliderRef}>
                 {imageProductList}
             </div>

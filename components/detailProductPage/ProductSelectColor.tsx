@@ -4,17 +4,19 @@ import ProductInputColor from "./ProductInputColor";
 
 interface SelectColorInterface {
     product: ProductInterface;
-    selectedValue: (event: ChangeEvent<HTMLInputElement>) => void;
+    setSelectedValue: (event: ChangeEvent<HTMLInputElement>) => void;
+    selectedValue: string
 }
-export default function ProductSelectColor({ product, selectedValue }: SelectColorInterface): JSX.Element {
+export default function ProductSelectColor({ product, setSelectedValue, selectedValue }: SelectColorInterface): JSX.Element {
     const list_color = product.products.map((product, index) => {
         return (
-            <ProductInputColor thumbnail={product.thumbnail} value={product.color} selectedValue={selectedValue} key={index} />
+            <ProductInputColor thumbnail={product.thumbnail} value={product.color} selectedValue={setSelectedValue} key={index} />
         );
     });
+    console.log(selectedValue)
     return (
         <div>
-            <div className="text-sm font-semibold mb-1">Color : </div>
+            <div className="text-sm font-semibold mb-1">Color : <span className="font-semibold text-xl">{selectedValue}</span></div>
             <div className="overflow-auto scrollbar-hide">
                 <ul className="flex gap-1">
                     {list_color}

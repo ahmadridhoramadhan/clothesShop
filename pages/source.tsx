@@ -11,9 +11,11 @@ import { TelephoneIcon } from "@/components/icons/TelephoneIcon"
 import Layout from "@/components/layouts"
 import Image from "next/image"
 import Link from "next/link"
+import { useRouter } from "next/router"
 import { ReactNode } from "react"
 
-export default function source() {
+export default function Source() {
+    const router = useRouter()
     return (
         <Layout title="Source Page">
             <div className="container mx-auto transition-all">
@@ -29,31 +31,18 @@ export default function source() {
                     <div>
                         <div className="my-6">
                             <h3 className="ml-2 text-xl font-semibold text-green-700 transition-colors hover:text-green-800 md:text-2xl"><Link href="" target="_blank">Unsplash</Link></h3>
-                            <div className="grid grid-cols-2 justify-items-center gap-5 border-t-2 border-black pt-5 sm:grid-cols-4 xl:grid-cols-5">
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
+                            <div className="grid grid-cols-2 justify-items-center gap-5 border-t-2 border-black pt-5 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5">
+                                <SourceImage link={"https://unsplash.com/photos/hNoSCxPWYII"} Image_src={`${router.basePath}/shop/man.jpg`} alt={""} />
+                                <SourceImage link={"https://unsplash.com/photos/liJ5irOt8BM"} Image_src={`${router.basePath}/shop/woman.jpg`} alt={""} />
+                                <SourceImage link={'https://unsplash.com/photos/aXJdmnxauwY'} Image_src={`${router.basePath}/aboutUs/s-o-c-i-a-l-c-u-t-aXJdmnxauwY-unsplash.jpg`} alt={""} />
+                                <SourceImage link={"https://unsplash.com/photos/ycVFts5Ma4s"} Image_src={`${router.basePath}/aboutUs/hannah-morgan-ycVFts5Ma4s-unsplash.jpg`} alt={""} />
+                                <SourceImage link={"https://unsplash.com/photos/HpEDSZukJqk"} Image_src={`${router.basePath}/aboutUs/clem-onojeghuo-HpEDSZukJqk-unsplash.jpg`} alt={""} />
                             </div>
                         </div>
-
                         <div className="my-6">
-                            <h3 className="ml-2 text-xl font-semibold text-green-700 transition-colors hover:text-green-800 md:text-2xl"><Link href="" target="_blank">Unsplash</Link></h3>
-                            <div className="grid grid-cols-2 justify-items-center gap-5 border-t-2 border-black pt-5 sm:grid-cols-4 xl:grid-cols-5">
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
-                                <SourceImage link={""} Image_src={""} alt={""} />
+                            <h3 className="ml-2 text-xl font-semibold text-green-700 transition-colors hover:text-green-800 md:text-2xl"><Link href="" target="_blank">Dall-E</Link></h3>
+                            <div className="grid grid-cols-2 justify-items-center gap-5 border-t-2 border-black pt-5 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5">
+                                <SourceImage Image_src={`${router.basePath}/aboutUs/dall.png`} alt={""} />
                             </div>
                         </div>
                     </div>
@@ -96,10 +85,10 @@ export default function source() {
     )
 }
 
-function SourceImage({ link, Image_src, alt }: { link: string, Image_src: string, alt: string }) {
+function SourceImage({ link = "", Image_src, alt }: { link?: string, Image_src: string, alt: string }) {
     return (
-        <div>
-            <Link href={link}><Image src={Image_src} alt={alt} className="h-32 w-32 transition-all hover:scale-105 sm:h-40 sm:w-40 md:h-44 md:w-44 xl:h-60 xl:w-60" /></Link>
+        <div className="relative h-32 w-32 transition-all hover:scale-105 sm:h-40 sm:w-40 md:h-44 md:w-44 xl:h-60 xl:w-60">
+            <Link href={link} target="_blank"><Image fill src={Image_src} alt={alt} /></Link>
         </div>
     )
 }

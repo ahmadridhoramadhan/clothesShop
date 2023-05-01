@@ -134,7 +134,7 @@ export default function DetailProduct({ product }: { product: ProductInterface }
                                     <input type="hidden" name="category" value={product.category} />
 
                                     <div className="mt-5">
-                                        <ProductSelectColor product={product} selectedValue={handleSelectedFormValue} />
+                                        <ProductSelectColor product={product} setSelectedValue={handleSelectedFormValue} selectedValue={selectedValue} />
 
                                         <ProductSelectSize selected_color_value={selectedValue} product={product} />
                                     </div>
